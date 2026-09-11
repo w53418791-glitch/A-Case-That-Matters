@@ -1190,3 +1190,94 @@ details.reprint-pool ul { margin: 0.35rem 0 0; font-size: 0.9rem; }
 @media (max-width: 640px) {
   .court-info-dl > div { grid-template-columns: 1fr; gap: 0.15rem; }
 }
+
+
+/* Per-outlet media cards */
+.outlet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.outlet-card {
+  background: var(--cream);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 0.9rem 1rem 0.85rem;
+  box-shadow: 0 1px 3px var(--shadow);
+  display: flex;
+  flex-direction: column;
+  min-height: 12rem;
+}
+.outlet-head {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--rule);
+}
+.outlet-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid var(--rule);
+  flex-shrink: 0;
+}
+.outlet-name {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  color: var(--walnut-deep);
+  line-height: 1.25;
+}
+.outlet-meta {
+  margin: 0.15rem 0 0;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+}
+.outlet-stories {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+.outlet-stories li {
+  margin: 0;
+  padding: 0;
+}
+.outlet-stories time {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  color: var(--gold-dim);
+  margin-bottom: 0.2rem;
+}
+.outlet-stories a {
+  color: var(--navy);
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-decoration: none;
+}
+.outlet-stories a:hover { text-decoration: underline; color: var(--gold-dim); }
+.story-blurb {
+  margin: 0.3rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+.outlet-stories .empty-story {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  padding: 0.35rem 0;
+}
+.sources-quiet-wrap { margin-top: 2rem; }
