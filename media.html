@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=hover3" />
+<link rel="stylesheet" href="styles.css?v=outlet1" />
 </head>
 <body>
 
@@ -48,9 +48,7 @@
     </ul>
     <ol>
       <li><a href="#sec-calendar">法院排期</a></li>
-      <li><a href="#sec-cards">开庭以来媒体卡</a></li>
-      <li><a href="#sec-watch">待补观察清单</a></li>
-      <li><a href="#sec-sources">来源链接</a></li>
+      <li><a href="#sec-outlets">媒体卡片</a></li>
     </ol>
   </nav>
 
@@ -59,7 +57,7 @@
     <section id="sec-intro">
       <span class="label-sc">Media Desk · Court Calendar</span>
       <h1 class="page-title">媒体报道与法院排期</h1>
-      <p class="lead">汇总开庭以来公开报道的要点与独特角度，并对照 EDNY 官方日历列出已核实的开庭日。悬停日历行可查看被告列名细节。</p>
+      <p class="lead">按媒体分卡收录报道（新稿在上），并对照 EDNY 官方日历列出已核实的开庭日。</p>
     </section>
 
     <section id="sec-calendar">
@@ -182,207 +180,215 @@
       </div>
     </section>
 
-    <section id="sec-cards">
-      <span class="label-sc">Coverage Since Openings</span>
-      <h2 class="section-h">开庭以来媒体卡片</h2>
-      <p>以下卡片汇总公开报道：出处、日期、庭审覆盖要点、独特角度与原文链接。分析评论已单独标注，请勿与庭审事实摘录混淆。</p>
+    <section id="sec-outlets">
+      <span class="label-sc">Outlet Cards</span>
+      <h2 class="section-h">媒体卡片</h2>
+      <p class="lead" style="margin-top:0">一家媒体一张卡；卡内报道按时间<strong>新→旧</strong>排列，有新稿时插到该卡最上方。</p>
 
-      <h3 class="sub-h">现场笔记 · Inner City Press</h3>
-      <div class="media-list">
-        <article class="media-card">
-          <div class="outlet">Inner City Press · 现场推文/笔记 · 2026-09-09 / 09-10</div>
-          <div class="headline">开场 + Beheshti / Schnider / 404 / Harmon</div>
-          <div class="meta-line">
-            <span class="type-pill">现场笔记</span>
-          </div>
-          <p><strong>覆盖：</strong>9/9 开场陈述与第一证人；9/10 Beheshti 收束、Futurewei Schnider、Rule 404 边审、富士通展会 Harmon 链等。<br/>
-          <strong>独特角度：</strong>较完整的逐段庭审顺序与边审细节；本站「庭审解读」页骨架来源。<br/>
-          <strong>说明：</strong>非官方 transcript；可能节略/转述；正式引用请核对法庭记录。</p>
+      <div class="outlet-grid">
+
+        <article class="outlet-card" id="outlet-icp" data-outlet="innercitypress">
+          <header class="outlet-head">
+            <img class="outlet-logo" src="logos/innercitypress.svg" alt="" width="40" height="40" />
+            <div>
+              <h3 class="outlet-name">Inner City Press</h3>
+              <p class="outlet-meta">现场笔记 · @innercitypress</p>
+            </div>
+          </header>
+          <ul class="outlet-stories">
+            <li>
+              <time datetime="2026-09-10">2026-09-10</time>
+              <a href="https://x.com/innercitypress" target="_blank" rel="noopener">Day 2 交叉与证人链（Beheshti 收束 · Schnider · Harmon / Fujitsu）</a>
+              <p class="story-blurb">官方日历开庭日的连续推文笔记；本站庭审解读骨架来源之一。</p>
+            </li>
+            <li>
+              <time datetime="2026-09-09">2026-09-09</time>
+              <a href="https://x.com/innercitypress" target="_blank" rel="noopener">开庭日开场陈述与第一证人 Beheshti</a>
+              <p class="story-blurb">Stout / Heberlig 开场及下午直接询问节拍。</p>
+            </li>
+          </ul>
         </article>
+
+        <article class="outlet-card" id="outlet-reuters" data-outlet="reuters">
+          <header class="outlet-head">
+            <img class="outlet-logo" src="logos/reuters.png" alt="" width="40" height="40" />
+            <div>
+              <h3 class="outlet-name">Reuters</h3>
+              <p class="outlet-meta">路透社 · Karen Freifeld 等</p>
+            </div>
+          </header>
+          <ul class="outlet-stories">
+            <li>
+              <time datetime="2026-09-09">2026-09-09</time>
+              <a href="https://www.reuters.com/legal/litigation/us-trial-against-chinas-huawei-opens-with-prosecutor-calling-the-company-2026-09-09/" target="_blank" rel="noopener">US trial opens; prosecutor calls Huawei a criminal enterprise</a>
+              <p class="story-blurb">开庭日主稿：Stout「Theft, lies, cover-up」；Heberlig「competition, not conspiracy」。</p>
+            </li>
+            <li>
+              <time datetime="2026-09-08">2026-09-08</time>
+              <a href="https://www.reuters.com/legal/litigation/huawei-heads-trial-us-over-its-business-dealings-iran-2026-09-08/" target="_blank" rel="noopener">Huawei heads to trial over Iran business dealings</a>
+              <p class="story-blurb">选陪审团开始；案情与 Skycom / 孟晚舟背景；预计约三个月。</p>
+            </li>
+          </ul>
+        </article>
+
+        <article class="outlet-card" id="outlet-bloomberg" data-outlet="bloomberg">
+          <header class="outlet-head">
+            <img class="outlet-logo" src="logos/bloomberg.png" alt="" width="40" height="40" />
+            <div>
+              <h3 class="outlet-name">Bloomberg</h3>
+              <p class="outlet-meta">彭博 · Patricia Hurtado 等</p>
+            </div>
+          </header>
+          <ul class="outlet-stories">
+            <li>
+              <time datetime="2026-09-09">2026-09-09</time>
+              <a href="https://www.bloomberg.com/news/articles/2026-09-09/china-s-huawei-comes-to-brooklyn-for-sweeping-us-criminal-trial" target="_blank" rel="noopener">China’s Huawei Comes to Brooklyn for Sweeping US Criminal Trial</a>
+              <p class="story-blurb">开庭预告与宏大诉讼定性；审判将持续数月。</p>
+            </li>
+          </ul>
+        </article>
+
+        <article class="outlet-card" id="outlet-wsj" data-outlet="wsj">
+          <header class="outlet-head">
+            <img class="outlet-logo" src="logos/wsj.png" alt="" width="40" height="40" />
+            <div>
+              <h3 class="outlet-name">The Wall Street Journal</h3>
+              <p class="outlet-meta">华尔街日报</p>
+            </div>
+          </header>
+          <ul class="outlet-stories">
+            <li>
+              <time datetime="2026-09-05">2026-09-05</time>
+              <a href="https://www.wsj.com/politics/national-security/huawei-faces-u-s-criminal-trial-weeks-before-trump-xi-meeting-d5e21663" target="_blank" rel="noopener">Huawei Faces U.S. Criminal Trial Weeks Before Trump-Xi Meeting</a>
+              <p class="story-blurb">开庭前背景：制裁、商业秘密指控与峰会时间线。</p>
+            </li>
+          </ul>
+        </article>
+
+        <article class="outlet-card" id="outlet-ap" data-outlet="ap">
+          <header class="outlet-head">
+            <img class="outlet-logo" src="logos/ap.png" alt="" width="40" height="40" />
+            <div>
+              <h3 class="outlet-name">Associated Press</h3>
+              <p class="outlet-meta">美联社（电稿；NBC 等转载同源）</p>
+            </div>
+          </header>
+          <ul class="outlet-stories">
+            <li>
+              <time datetime="2026-09-10">2026-09-10</time>
+              <a href="https://www.nbcnews.com/tech/tech-news/racketeering-conspiracy-trial-chinese-tech-giant-huawei-new-york-rcna596971" target="_blank" rel="noopener">Racketeering conspiracy trial begins in New York</a>
+              <p class="story-blurb">AP 电稿（NBC 等刊载）：开场要点与第一证人 Baheshti/Beheshti。</p>
+            </li>
+          </ul>
+        </article>
+
+        <article class="outlet-card" id="outlet-law360" data-outlet="law360">
+          <header class="outlet-head">
+            <img class="outlet-logo" src="logos/law360.png" alt="" width="40" height="40" />
+            <div>
+              <h3 class="outlet-name">Law360</h3>
+              <p class="outlet-meta">法律垂媒 · Stewart Bishop 等</p>
+            </div>
+          </header>
+          <ul class="outlet-stories">
+            <li>
+              <time datetime="2026-09-10">2026-09-10</time>
+              <a href="https://www.law360.com/articles/2523379/feds-ny-rico-case-against-huawei-packs-a-punch-jury-told" target="_blank" rel="noopener">Feds' NY RICO Case Against Huawei Packs A Punch, Jury Told</a>
+              <p class="story-blurb">开庭详报：控辩开场、证人、律师名单与 mistrial 等程序细节。</p>
+            </li>
+          </ul>
+        </article>
+
+        <article class="outlet-card" id="outlet-ft" data-outlet="ft">
+          <header class="outlet-head">
+            <img class="outlet-logo" src="logos/ft.png" alt="" width="40" height="40" />
+            <div>
+              <h3 class="outlet-name">Financial Times</h3>
+              <p class="outlet-meta">金融时报</p>
+            </div>
+          </header>
+          <ul class="outlet-stories">
+            <li class="empty-story">暂无已收录的本案开庭原创报道；有新稿将插到本卡顶部。</li>
+          </ul>
+        </article>
+
+        <article class="outlet-card" id="outlet-nikkei" data-outlet="nikkei">
+          <header class="outlet-head">
+            <img class="outlet-logo" src="logos/nikkei.png" alt="" width="40" height="40" />
+            <div>
+              <h3 class="outlet-name">Nikkei Asia</h3>
+              <p class="outlet-meta">日经亚洲</p>
+            </div>
+          </header>
+          <ul class="outlet-stories">
+            <li class="empty-story">暂无已收录的本案开庭原创报道；有新稿将插到本卡顶部。</li>
+          </ul>
+        </article>
+
+        <article class="outlet-card" id="outlet-fierce" data-outlet="fierce">
+          <header class="outlet-head">
+            <img class="outlet-logo" src="logos/fierce.png" alt="" width="40" height="40" />
+            <div>
+              <h3 class="outlet-name">Fierce Network</h3>
+              <p class="outlet-meta">电信行业垂媒</p>
+            </div>
+          </header>
+          <ul class="outlet-stories">
+            <li class="empty-story">暂无已收录稿件；有新稿将插到本卡顶部。</li>
+          </ul>
+        </article>
+
+        <article class="outlet-card" id="outlet-gir" data-outlet="gir">
+          <header class="outlet-head">
+            <img class="outlet-logo" src="logos/gir.png" alt="" width="40" height="40" />
+            <div>
+              <h3 class="outlet-name">Global Investigations Review</h3>
+              <p class="outlet-meta">GIR · 调查合规垂媒</p>
+            </div>
+          </header>
+          <ul class="outlet-stories">
+            <li class="empty-story">暂无已收录稿件；有新稿将插到本卡顶部。</li>
+          </ul>
+        </article>
+
+        <article class="outlet-card" id="outlet-courthouse" data-outlet="courthouse">
+          <header class="outlet-head">
+            <img class="outlet-logo" src="logos/courthouse.png" alt="" width="40" height="40" />
+            <div>
+              <h3 class="outlet-name">Courthouse News Service</h3>
+              <p class="outlet-meta">法院新闻</p>
+            </div>
+          </header>
+          <ul class="outlet-stories">
+            <li class="empty-story">暂无已收录稿件；有新稿将插到本卡顶部。</li>
+          </ul>
+        </article>
+
+        <article class="outlet-card" id="outlet-guardian" data-outlet="guardian">
+          <header class="outlet-head">
+            <img class="outlet-logo" src="logos/guardian.png" alt="" width="40" height="40" />
+            <div>
+              <h3 class="outlet-name">The Guardian</h3>
+              <p class="outlet-meta">卫报（多与路透开庭稿同源）</p>
+            </div>
+          </header>
+          <ul class="outlet-stories">
+            <li>
+              <time datetime="2026-09-10">2026-09-10</time>
+              <a href="https://www.theguardian.com/technology/2026/sep/10/china-huawei-trial-us" target="_blank" rel="noopener">Huawei branded a criminal enterprise as US trial opens</a>
+              <p class="story-blurb">开庭综述；核心引语与 Reuters 开庭稿高度同源。</p>
+            </li>
+          </ul>
+        </article>
+
       </div>
-
-      <h3 class="sub-h">通讯社 · 主流报道</h3>
-      <div class="media-list">
-        <article class="media-card">
-          <div class="outlet">Reuters · Karen Freifeld · 2026-09-08</div>
-          <div class="headline">Huawei heads to trial in US over its business dealings in Iran</div>
-          <div class="meta-line">
-            <span class="type-pill">通讯社</span>
-          </div>
-          <p><strong>覆盖：</strong>选陪审开始、指控谱系（银行欺诈/伊朗、商业秘密、制裁等）、八年等待。<br/>
-          <strong>独特角度：</strong>开庭前预告框架；与后续开庭篇形成连续报道。<br/>
-          <a class="ext" href="https://www.reuters.com/legal/litigation/huawei-heads-trial-us-over-its-business-dealings-iran-2026-09-08/" target="_blank" rel="noopener">reuters.com/…/2026-09-08/</a></p>
-        </article>
-
-        <article class="media-card">
-          <div class="outlet">Reuters · Karen Freifeld · 2026-09-09</div>
-          <div class="headline">US trial against China’s Huawei opens… criminal enterprise</div>
-          <div class="meta-line">
-            <span class="type-pill">通讯社</span>
-          </div>
-          <p><strong>覆盖：</strong>Stout「Theft, lies, cover-up」；辩方「competition not conspiracy / no blueprint for crime」；五家美企商业秘密与 Tappy 等开场承诺。<br/>
-          <strong>独特角度：</strong>开庭日金句与叙事对仗的通讯社基准稿；大量转载源。<br/>
-          <a class="ext" href="https://www.reuters.com/legal/litigation/us-trial-against-chinas-huawei-opens-with-prosecutor-calling-the-company-2026-09-09/" target="_blank" rel="noopener">reuters.com/…/2026-09-09/</a></p>
-          <div class="wire-kids">
-            <strong>综合转载</strong>
-            Guardian 2026-09-10 综合稿高度对齐 Reuters 开庭叙述（署名/来源线显示 Reuters）：
-            <a class="ext" href="https://www.theguardian.com/technology/2026/sep/10/china-huawei-trial-us" target="_blank" rel="noopener">theguardian.com/…/china-huawei-trial-us</a>
-          </div>
-        </article>
-
-        <article class="media-card">
-          <div class="outlet">Bloomberg · Patricia Hurtado · 2026-09-09</div>
-          <div class="headline">China’s Huawei Comes to Brooklyn for Sweeping US Criminal Trial</div>
-          <div class="meta-line">
-            <span class="type-pill">通讯社</span>
-          </div>
-          <p><strong>覆盖：</strong>开庭窗口、案件雄心与历时、企业级刑事风险语境。<br/>
-          <strong>独特角度：</strong>财经/企业风险取向——融资、合规与地缘溢价读法，区别于纯法庭程序稿。<br/>
-          <a class="ext" href="https://www.bloomberg.com/news/articles/2026-09-09/china-s-huawei-comes-to-brooklyn-for-sweeping-us-criminal-trial" target="_blank" rel="noopener">bloomberg.com/…/2026-09-09/…</a></p>
-        </article>
-
-        <article class="media-card">
-          <div class="outlet">Wall Street Journal · 2026-09（开庭窗口）</div>
-          <div class="headline">Huawei Faces U.S. Criminal Trial Weeks Before Trump-Xi Meeting</div>
-          <div class="meta-line">
-            <span class="type-pill">通讯社</span>
-          </div>
-          <p><strong>覆盖：</strong>开庭与习—特会晤日程重叠的外交/国安框定；指控谱系概述。<br/>
-          <strong>独特角度：</strong>将审判明确置于峰会前的「长期刺激点」叙事（属媒体框架，非法庭证据）。Risk Report 摘要链至主文。<br/>
-          <a class="ext" href="https://www.wsj.com/politics/national-security/huawei-faces-u-s-criminal-trial-weeks-before-trump-xi-meeting-d5e21663" target="_blank" rel="noopener">wsj.com/…/huawei-faces-u-s-criminal-trial-weeks-before-trump-xi-meeting-…</a></p>
-        </article>
-
-        <article class="media-card">
-          <div class="outlet">Associated Press · via NBC News 等 · 2026-09-10</div>
-          <div class="headline">Racketeering conspiracy trial against Chinese tech giant Huawei begins in New York</div>
-          <div class="meta-line">
-            <span class="type-pill">通讯社</span>
-          </div>
-          <p><strong>覆盖：</strong>开庭综述；Beheshti 人物背景与情绪引语；辩方「轶事/个别员工」反击。<br/>
-          <strong>独特角度：</strong>面向大众读者的人物小传密度；NBC 页标明 Source: AP。<br/>
-          <a class="ext" href="https://www.nbcnews.com/tech/tech-news/racketeering-conspiracy-trial-chinese-tech-giant-huawei-new-york-rcna596971" target="_blank" rel="noopener">nbcnews.com/…（AP 电稿呈现）</a></p>
-          <div class="wire-kids">
-            <strong>综合转载</strong>
-            其他走 AP 电稿的综合页（如部分 ABC/区域站点）可一并参考，内容同源。
-          </div>
-        </article>
-      </div>
-
-      <h3 class="sub-h">法律专业媒</h3>
-      <div class="media-list">
-        <article class="media-card">
-          <div class="outlet">Law360 · Stewart Bishop · 2026-09-10</div>
-          <div class="headline">Feds’ NY RICO Case Against Huawei Packs A Punch, Jury Told</div>
-          <div class="meta-line">
-            <span class="type-pill">法律专业媒</span>
-          </div>
-          <p><strong>覆盖：</strong>开庭日程序与攻防密度——合作者/宽大、汇丰银行家预期、罪名与律师名单、mistrial、银行与 IP 抗辩要点等。<br/>
-          <strong>独特角度：</strong>律师读者向的「证据地图」；本站程序细节多处与之交叉核对。<br/>
-          <a class="ext" href="https://www.law360.com/articles/2523379/feds-ny-rico-case-against-huawei-packs-a-punch-jury-told" target="_blank" rel="noopener">law360.com/articles/2523379/…</a></p>
-        </article>
-      </div>
-
-      <h3 class="sub-h">分析评论 · 综合转载</h3>
-      <div class="media-list">
-        <article class="media-card">
-          <div class="outlet">The Next Web (TNW) · 开庭后分析</div>
-          <div class="headline">Huawei’s US racketeering trial opens… criminal enterprise</div>
-          <div class="meta-line">
-            <span class="type-pill">分析评论</span>
-          </div>
-          <p><strong>覆盖：</strong>开场对仗之上的评论——RICO「模式 vs 轶事」、 acquittal/conviction 对安全叙事的意义。<br/>
-          <strong>独特角度：</strong>科技政策读者向的框架讨论；不替代现场笔记或通讯社事实层。<br/>
-          <a class="ext" href="https://thenextweb.com/news/huawei-us-racketeering-trial-opening-statements-brooklyn" target="_blank" rel="noopener">thenextweb.com/news/huawei-us-racketeering-trial-…</a></p>
-        </article>
-
-        <article class="media-card">
-          <div class="outlet">South China Morning Post · 2026-09（开庭后）</div>
-          <div class="headline">Huawei racketeering trial turns to alleged trade secret theft from Japan’s Fujitsu 等</div>
-          <div class="meta-line">
-            <span class="type-pill">综合转载</span>
-          </div>
-          <p><strong>覆盖：</strong>富士通线预告、开场金句与孟晚舟 SOF 争议的再包装。<br/>
-          <strong>独特角度：</strong>亚太读者向选题；事实核对应回通讯社与现场笔记。<br/>
-          <a class="ext" href="https://www.scmp.com/news/us/article/3367100/huawei-racketeering-trial-turns-alleged-trade-secret-theft-japans-fujitsu" target="_blank" rel="noopener">scmp.com/…/fujitsu</a></p>
-        </article>
-
-        <article class="media-card">
-          <div class="outlet">ICLG 新闻简讯 · 开庭窗口</div>
-          <div class="headline">Huawei faces US jury over alleged 20-year criminal enterprise</div>
-          <div class="meta-line">
-            <span class="type-pill">分析评论</span>
-          </div>
-          <p><strong>覆盖：</strong>罪名结构、法官「中国与共产党不在受审」指示的转述、约三个月时长等。<br/>
-          <strong>用途：</strong>作「媒体报道的预计时长」参考之一；非官方结案日。<br/>
-          <a class="ext" href="https://iclg.com/news/huawei-faces-us-jury-over-alleged-20-year-criminal-enterprise/" target="_blank" rel="noopener">iclg.com/news/…</a></p>
-        </article>
-      </div>
-
-      <details class="reprint-pool">
-        <summary>其他综合转载（折叠）</summary>
-        <ul>
-          <li><strong>Guardian</strong> — 开庭综合，内容高度对齐 Reuters（见上 Reuters 卡下挂链）。</li>
-          <li><strong>NBC / 部分 ABC 等</strong> — 呈现 AP 电稿或 AP 源。</li>
-          <li><strong>Independent 等英文综合</strong> — 若与 Reuters/AP 同源，可并入对应通讯社报道阅读。</li>
-          <li><strong>Globe and Mail 等</strong> — 可见 Freifeld/Reuters 署名或高度同源转载。</li>
-        </ul>
-      </details>
     </section>
 
-    <section id="sec-watch">
-      <span class="label-sc">Watchlist</span>
-      <h2 class="section-h">待补观察清单</h2>
-      <p>下列媒体目前尚无已核实的原创报道条目；有新稿后将补充日期、覆盖要点、独特角度与链接。</p>
-      <div class="media-grid-2">
-        <article class="media-card pending">
-          <div class="outlet">Financial Times</div>
-          <div class="headline">（待发现报道）</div>
-          <div class="meta-line"><span class="type-pill">通讯社</span></div>
-          <p>关注：银行/制裁线、全球资本市场读法、与 HSBC 叙事相关的增量。</p>
-        </article>
-        <article class="media-card pending">
-          <div class="outlet">Nikkei Asia</div>
-          <div class="headline">（待发现报道）</div>
-          <div class="meta-line"><span class="type-pill">通讯社</span></div>
-          <p>关注：亚太供应链、富士通/日企被害叙事、区域政策反应。</p>
-        </article>
-        <article class="media-card pending">
-          <div class="outlet">Fierce Network</div>
-          <div class="headline">（待发现报道）</div>
-          <div class="meta-line"><span class="type-pill">行业媒</span></div>
-          <p>关注：电信设备商读者向的竞争/合规角度。</p>
-        </article>
-        <article class="media-card pending">
-          <div class="outlet">GIR（Global Investigations Review）</div>
-          <div class="headline">（待发现报道）</div>
-          <div class="meta-line"><span class="type-pill">法律专业媒</span></div>
-          <p>关注：企业调查、监察与跨境执法实务角度。</p>
-        </article>
-        <article class="media-card pending">
-          <div class="outlet">Courthouse News Service</div>
-          <div class="headline">（待发现报道）</div>
-          <div class="meta-line"><span class="type-pill">法律专业媒</span></div>
-          <p>关注：法庭记者的程序/旁听细节（仍非官方 transcript）。</p>
-        </article>
-        <article class="media-card pending">
-          <div class="outlet">后续 AP / Reuters 日更</div>
-          <div class="headline">（按日追加）</div>
-          <div class="meta-line"><span class="type-pill">通讯社</span></div>
-          <p>新电稿将按日补充；若仅为旧稿翻版，并入已有报道说明。</p>
-        </article>
-      </div>
+    <section id="sec-sources" class="sources-quiet-wrap">
+      <p class="sources-quiet">日历：<a href="https://www.nyed.uscourts.gov/court-calendars" target="_blank" rel="noopener">EDNY Court Calendars</a> · <a href="https://www.nyed.uscourts.gov/cal/" target="_blank" rel="noopener">Daily calendars</a></p>
     </section>
 
-    <section id="sec-sources">
-      <span class="label-sc">Sources</span>
-      <h2 class="section-h">来源链接</h2>
-      <p class="sources-quiet">
-        <a href="https://www.nyed.uscourts.gov/court-calendars" target="_blank" rel="noopener">EDNY Court Calendars</a> ·
-        <a href="https://www.nyed.uscourts.gov/cal/" target="_blank" rel="noopener">/cal/ 日目录</a> ·
-        媒体链接见各报道卡片 ·
-        <a href="index.html">返回庭审解读</a>
-      </p>
-    </section>
+
 
   </main>
 </div>
@@ -391,6 +397,6 @@
   U.S. v. Huawei · 1:18-cr-00457 · 媒体报道与法院排期 · 官方日历已核对 9/9–10、9/11、9/15–16
 </footer>
 
-<script src="app.js?v=hover3"></script>
+<script src="app.js?v=outlet1"></script>
 </body>
 </html>
