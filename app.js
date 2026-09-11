@@ -1,4 +1,4 @@
-/* Sticky TOC + expand/collapse analysis details */
+/* Sticky TOC + expand/collapse analysis details + people/calendar progressive disclosure */
 (function () {
   const toc = document.getElementById("toc");
   if (toc) {
@@ -51,5 +51,56 @@
       const root = scope ? document.querySelector(scope) : document;
       allDetails(root).forEach((d) => { d.open = false; });
     });
+  });
+
+  /* Progressive disclosure: tap/click toggle for people chips & calendar rows (esp. touch) */
+  function closeOthers(selector, current) {
+    document.querySelectorAll(selector + ".is-open").forEach((el) => {
+      if (el !== current) el.classList.remove("is-open");
+    });
+  }
+
+  document.querySelectorAll(".person").forEach((el) => {
+    el.addEventListener("click", (e) => {
+      // Allow links inside tip to work without toggling closed immediately
+      if (e.target.closest("a")) return;
+      const open = el.classList.contains("is-open");
+      closeOthers(".person", el);
+      el.classList.toggle("is-open", !open);
+    });
+    el.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") el.classList.remove("is-open");
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        const open = el.classList.contains("is-open");
+        closeOthers(".person", el);
+        el.classList.toggle("is-open", !open);
+      }
+    });
+  });
+
+  document.querySelectorAll(".cal-hover").forEach((el) => {
+    el.addEventListener("click", () => {
+      const open = el.classList.contains("is-open");
+      closeOthers(".cal-hover", el);
+      el.classList.toggle("is-open", !open);
+    });
+    el.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") el.classList.remove("is-open");
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        const open = el.classList.contains("is-open");
+        closeOthers(".cal-hover", el);
+        el.classList.toggle("is-open", !open);
+      }
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".person") && !e.target.closest(".cal-hover")) {
+      document.querySelectorAll(".person.is-open, .cal-hover.is-open").forEach((el) => {
+        el.classList.remove("is-open");
+      });
+    }
   });
 })();
