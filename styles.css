@@ -1137,3 +1137,56 @@ details.reprint-pool ul { margin: 0.35rem 0 0; font-size: 0.9rem; }
 #sec-cast, .people-groups, .people-group, .people-row, .person {
   overflow: visible;
 }
+
+
+/* Simple court info card */
+.court-info-section { margin-bottom: 1.75rem; }
+.court-info-card {
+  background: var(--cream);
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--navy);
+  padding: 1rem 1.15rem 1.05rem;
+  max-width: 44rem;
+  box-shadow: 0 1px 3px var(--shadow);
+}
+.court-info-title {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+  color: var(--walnut-deep);
+}
+.court-info-dl {
+  margin: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+.court-info-dl > div {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  gap: 0.5rem 0.85rem;
+  align-items: start;
+}
+.court-info-dl dt {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  padding-top: 0.15rem;
+}
+.court-info-dl dd {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--ink);
+}
+.court-info-dl code {
+  font-size: 0.88em;
+  background: #efe6d6;
+  padding: 0.05rem 0.35rem;
+  border-radius: 2px;
+}
+@media (max-width: 640px) {
+  .court-info-dl > div { grid-template-columns: 1fr; gap: 0.15rem; }
+}
