@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=court1" />
+<link rel="stylesheet" href="styles.css?v=split1" />
 </head>
 <body>
 
@@ -47,15 +47,15 @@
       <li><a href="media.html">媒体与排期 →</a></li>
     </ul>
     <ol>
-            <li><a href="#sec-court-card">开庭信息</a></li>
-<li><a href="#sec-dashboard">今日要点</a></li>
+      <li><a href="#sec-court-card">开庭信息</a></li>
+      <li><a href="#sec-dashboard">今日要点</a></li>
       <li><a href="#sec-cover">案情扉页</a></li>
-      <li><a href="#sec-timeline">时间线 2012–2026</a></li>
+      <li><a href="#sec-timeline">时间线</a></li>
       <li><a href="#sec-cast">人物志</a></li>
-      <li><a href="#sec-transcript">9月9日庭审解读</a></li>
-      <li><a href="#sec-day2">9月10日庭审解读</a></li>
+      <li><a href="day-sept9.html">9月9日庭审解读</a></li>
+      <li><a href="day-sept10.html">9月10日庭审解读</a></li>
       <li><a href="#sec-compare">控辩叙事对照</a></li>
-<li><a href="#sec-judgment">总体评判</a></li>
+      <li><a href="#sec-judgment">总体评判</a></li>
       <li><a href="#sec-sources">来源链接</a></li>
     </ol>
   </nav>
@@ -66,9 +66,9 @@
     <section id="sec-dashboard">
       <span class="label-sc">Focus First · 今日要点</span>
       <h1 class="page-title" style="font-size:clamp(1.25rem,2.6vw,1.55rem)">案情仪表盘 · 开庭两日速览</h1>
-      <p class="dash-hint">先看要点，再按需展开下方逐段庭审解读。开场陈述不是证据；Inner City Press 笔记<strong>不是</strong>官方逐字稿。本页不构成法律意见。</p>
+      <p class="dash-hint">先看要点，再进入分日全日解读页。开场陈述不是证据；Inner City Press 笔记<strong>不是</strong>官方逐字稿。本页不构成法律意见。</p>
       <div class="dashboard">
-        <div class="dash-card">
+        <a class="dash-card dash-card-link" href="day-sept9.html">
           <h3>9月9日 · 开庭日</h3>
           <ul>
             <li><strong>控方 Stout：</strong>「Theft, lies, cover-up」——二十年模式：IP 盗窃、对银行隐瞒伊朗业务、滥用美元体系。</li>
@@ -76,8 +76,9 @@
             <li><strong>孟晚舟 SOF：</strong>控方称承认对银行说谎并控制 Skycom；辩方强调无欺诈故意承认。</li>
             <li><strong>第一证人 Beheshti：</strong>伊朗数据中心、中方控制、合法监听提案；交叉打合作史与儿子转移；mistrial 被拒。</li>
           </ul>
-        </div>
-        <div class="dash-card day2">
+          <span class="dash-cta">进入全日解读 →</span>
+        </a>
+        <a class="dash-card dash-card-link day2" href="day-sept10.html">
           <h3>9月10日 · 证言第二日</h3>
           <ul>
             <li><strong>Beheshti 收束：</strong>在伊工作/签字、安全许可表格；「政府从未起诉你」异议成立（sustained）。</li>
@@ -85,7 +86,8 @@
             <li><strong>Rule 404：</strong>法官以「银行抢劫案不能问何时没抢」限制 prior good acts（Tech Women、无关出口批准等）。</li>
             <li><strong>富士通展会：</strong>Harmon 链——非常规安保、持相机男子、护照/存储卡；辩方最小化（未目击快门、公开展品）。</li>
           </ul>
-        </div>
+          <span class="dash-cta">进入全日解读 →</span>
+        </a>
       </div>
 </section>
 
@@ -115,19 +117,45 @@
     <!-- 2 TIMELINE -->
     <section id="sec-timeline">
       <span class="label-sc">Chronology</span>
-      <h2 class="section-h">时间线背景：2012–2026</h2>
-      <div class="timeline">
-        <div class="timeline-item"><div class="year">2012–2013</div><div class="event">路透社报道华为与在伊朗运营的 Skycom 关系密切；称 Skycom 曾向伊朗大型移动运营商要约出售受禁运的惠普设备；并报道孟晚舟曾任 Skycom 董事。上述报道成为日后刑事调查的重要公开线索。</div></div>
-        <div class="timeline-item"><div class="year">约 1999–2020（指控期间）</div><div class="event">起诉书覆盖的被指行为跨度约二十年：商业秘密、制裁、银行欺诈、洗钱、妨碍司法等被编织进同一企业犯罪故事。</div></div>
-        <div class="timeline-item"><div class="year">2018</div><div class="event">联邦大陪审团起诉；孟晚舟12月在温哥华被捕，触发美—加—中外交危机。早期核心是银行欺诈与对伊制裁相关指控。</div></div>
-        <div class="timeline-item"><div class="year">2019 以降</div><div class="event">指控扩容为包含 RICO 等的超级起诉；华为设备在美受限，供应需商务部许可。华盛顿推动盟友审慎对待华为网络设备。</div></div>
-        <div class="timeline-item"><div class="year">2021–2022</div><div class="event">孟晚舟达成暂缓起诉协议并获释返华；个人指控随后撤销。SOF 中的承认成为公司案举证战场。同期外界普遍将安排与加中拘押加公民事件的外交联动相联系（媒体叙述，非本页裁判）。</div></div>
-        <div class="timeline-item"><div class="year">审前 2026</div><div class="event">陪审员填写约27页问卷，含对中国、伊朗政府看法；西雅图 Tappy 相关平行起诉搁置待本案。Skycom 作为被告被撤回但仍为叙事关键。</div></div>
-        <div class="timeline-item"><div class="year">2026-09-08</div><div class="event">布鲁克林开始选陪审员。路透 Freifeld 预告审判约三个月，并与9月24日习—特会晤日程重叠。</div></div>
-        <div class="timeline-item"><div class="year">2026-09-09</div><div class="event">正式开庭：Stout / Heberlig 开场；Beheshti 开始作证；辩方 mistrial 动议被拒。</div></div>
-        <div class="timeline-item"><div class="year">2026-09-10</div><div class="event">第二日：Beheshti 交叉以安全许可表格与“目的证明手段”收束；Linda Schnider 指 Futurewei 存在中国工程师研读使用专利信息、数据备份至中国等文化问题；法官以银行抢劫类比限制 prior good acts；Teresa/Timothy Harmon 讲述富士通展会拍照事件。Penalty 专家（如 Todd Haugh）称若全面定罪，罚金可能自数亿至数十亿美元不等。</div></div>
-      </div>
-      <p>理解时间线的要点有二：其一，本案不是“突然出现的对伊交易指控”，而是由早期报道、秘密起诉、外交危机、扩容 RICO、个人程序剥离后，沉淀下来的<strong>对公司本身</strong>的总清算；其二，开庭恰逢大国峰会窗口，地缘政治“回声”真实存在，但法官仍会指示陪审团只依据证据裁决。</p>
+      <h2 class="section-h">时间线背景</h2>
+      <p class="timeline-lead">默认折叠。展开可见<strong>控方指控相关时间点</strong>（起诉书与公开报道所称，<em>非已决事实</em>）与<strong>程序时间线</strong>。理解本案需同时看见被指行为跨度与法庭程序节奏。</p>
+      <details class="timeline-fold">
+        <summary>
+          <span class="fold-title">展开完整时间线</span>
+          <span class="fold-hint">控方指控相关时间点 · 程序时间线 2018–2026</span>
+        </summary>
+        <div class="timeline-fold-body">
+
+          <h3 class="timeline-subh">控方指控相关时间点</h3>
+          <p class="timeline-caveat"><strong>标注说明：</strong>以下条目来自<strong>控方指控 / 起诉书与公开报道所称</strong>，属被指称行为或叙事节点，<strong>并非已决事实</strong>。公司案仍在审理中；孟晚舟个人程序已另作安排。</p>
+          <div class="timeline alleged">
+            <div class="timeline-item"><div class="year">约 2004-07</div><div class="event"><span class="tag-allege">控方指控</span>芝加哥展会：雇员被指拍摄竞争对手设备（开场陈述 / 起诉书中的富士通相关叙事）。</div></div>
+            <div class="timeline-item"><div class="year">约 2007–2014</div><div class="event"><span class="tag-allege">控方指控</span>被指 IEEPA / 伊朗 Skycom 银行与电信服务相关期间（起诉书所载时间范围）。</div></div>
+            <div class="timeline-item"><div class="year">2007 起</div><div class="event"><span class="tag-allege">控方指控</span>Skycom 股权转让 / Canicula 控制等指控叙事（孟晚舟 DPA 事实陈述书 SOF / DOJ）。</div></div>
+            <div class="timeline-item"><div class="year">2008-02 至 2009-04</div><div class="event"><span class="tag-allege">公开报道 / DOJ</span>孟晚舟被指曾任 Skycom 董事会成员（DOJ / Reuters）。</div></div>
+            <div class="timeline-item"><div class="year">2009</div><div class="event"><span class="tag-allege">控方指控</span>被指协助伊朗方面抗议监控相关事项（superseding indictment / Lawfare 梳理）。</div></div>
+            <div class="timeline-item"><div class="year">约 2010–2014</div><div class="event"><span class="tag-allege">控方指控</span>被指经银行清算约 1 亿美元美元业务（孟晚舟 SOF / Reuters）。</div></div>
+            <div class="timeline-item"><div class="year">Tappy 案线</div><div class="event"><span class="tag-allege">另案 / 开场提及</span>T-Mobile「Tappy」机器人盗窃相关指控（西雅图平行案；布鲁克林开场亦提及）。</div></div>
+            <div class="timeline-item"><div class="year">Cisco 相关</div><div class="event"><span class="tag-allege">控方开场</span>路由器操作系统 / 商业秘密相关指控叙事（开场陈述）。</div></div>
+            <div class="timeline-item"><div class="year">朝鲜业务</div><div class="event"><span class="tag-allege">控方指控</span>被指就朝鲜业务作出不实陈述（Lawfare 对 superseding indictment 的梳理）。</div></div>
+            <div class="timeline-item"><div class="year">2012–2013</div><div class="event"><span class="tag-report">公开报道</span>路透社 Skycom 系列报道：华为与在伊运营 Skycom 关系、禁运设备要约、孟晚舟曾任董事等——成为日后刑事调查的重要公开线索。</div></div>
+          </div>
+
+          <h3 class="timeline-subh">程序时间线</h3>
+          <div class="timeline procedural">
+            <div class="timeline-item"><div class="year">2018</div><div class="event">联邦大陪审团起诉；孟晚舟 12 月在温哥华被捕，触发美—加—中外交危机。早期核心为银行欺诈与对伊制裁相关指控。</div></div>
+            <div class="timeline-item"><div class="year">2019 以降</div><div class="event">指控扩容（含 RICO 等超级起诉）；华为设备在美受限。华盛顿推动盟友审慎对待华为网络设备。</div></div>
+            <div class="timeline-item"><div class="year">2021–2022</div><div class="event">孟晚舟达成暂缓起诉协议（DPA）并获释返华；个人指控随后撤销。SOF 中的承认成为公司案举证战场。</div></div>
+            <div class="timeline-item"><div class="year">2026-09-08</div><div class="event">布鲁克林开始选陪审员。路透等预告审判约三个月。</div></div>
+            <div class="timeline-item"><div class="year">2026-09-09 / 09-10</div><div class="event">正式开庭与证言：法庭日历为 <strong>6D</strong>。详见 <a href="day-sept9.html">9月9日</a>、<a href="day-sept10.html">9月10日</a>全日解读。</div></div>
+            <div class="timeline-item"><div class="year">2026-09-11</div><div class="event">无开庭（休庭日）。</div></div>
+            <div class="timeline-item"><div class="year">2026-09-15 / 09-16</div><div class="event">排期法庭 <strong>4G</strong>（官方日历）。</div></div>
+            <div class="timeline-item"><div class="year">预计约 3 个月</div><div class="event">整案审理预期时长（媒体报道口径）；具体以法庭安排为准。</div></div>
+          </div>
+
+          <p class="timeline-tail">理解时间线的要点有二：其一，本案不是“突然出现的对伊交易指控”，而是由早期报道、秘密起诉、外交危机、扩容 RICO、个人程序剥离后，沉淀下来的<strong>对公司本身</strong>的总清算；其二，开庭恰逢大国日程窗口，地缘政治“回声”真实存在，但法官仍会指示陪审团只依据证据裁决。</p>
+        </div>
+      </details>
     </section>
 
     <!-- 3 CAST -->
@@ -347,1128 +375,37 @@
     </section>
 
     <!-- 4 TRANSCRIPT -->
-    <section id="sec-transcript">
-      <span class="label-sc">Bench-by-Bench · The Spine</span>
-      <h2 class="section-h">9月9日庭审解读（开庭日）</h2>
-
-      <div class="toolbar-expand">
-        <button type="button" data-expand-all="#sec-transcript">全部展开解读</button>
-        <button type="button" data-collapse-all="#sec-transcript">全部收起</button>
-        <span class="hint">默认折叠，便于扫读原话</span>
+    <!-- DAY ENTRY CARDS (full transcripts on separate pages) -->
+    <section id="sec-day-entries" class="day-entries">
+      <span class="label-sc">Daily Briefs · 分日解读</span>
+      <h2 class="section-h">开庭两日 · 进入全日解读</h2>
+      <p class="dash-hint">首页只保留要点卡片；节拍级全文已拆至独立页面，避免首屏过重。笔记 ≠ 官方逐字稿。</p>
+      <div class="day-entry-grid">
+        <article class="day-entry-card" id="sec-transcript-card">
+          <h3><a href="day-sept9.html">9月9日 · 开庭日</a></h3>
+          <p class="day-entry-meta">开场陈述 · 第一证人 Beheshti · mistrial 动议</p>
+          <ul>
+            <li><strong>控方 Stout：</strong>「Theft, lies, cover-up」——IP 盗窃、对银行隐瞒伊朗业务、滥用美元体系的二十年模式叙事。</li>
+            <li><strong>辩方 Heberlig：</strong>竞争非共谋、创新非盗窃；「There was no blueprint for crime」；RICO 不是捷径。</li>
+            <li><strong>孟晚舟 SOF：</strong>控方称承认对银行说谎并控制 Skycom；辩方强调无欺诈故意承认。</li>
+            <li><strong>Beheshti：</strong>伊朗数据中心、中方控制、合法监听提案；交叉打合作史；mistrial 被拒。</li>
+            <li><strong>媒体交织：</strong>汇丰银行家预期出庭；Tappy 平行案搁置；华为强调许可费与研发投入。</li>
+          </ul>
+          <a class="day-entry-cta" href="day-sept9.html">进入全日解读 →</a>
+        </article>
+        <article class="day-entry-card day2" id="sec-day2-card">
+          <h3><a href="day-sept10.html">9月10日 · 证言第二日</a></h3>
+          <p class="day-entry-meta">Beheshti 收束 · Schnider · 404 限制 · Harmon 展会链</p>
+          <ul>
+            <li><strong>Beheshti 收束：</strong>在伊工作/签字、安全许可表格；「政府从未起诉你」异议成立（sustained）。</li>
+            <li><strong>Schnider（Futurewei）：</strong>中国工程师研读使用专利信息、上报无果、数据备份至中国后辞职。</li>
+            <li><strong>Rule 404：</strong>法官以「银行抢劫案不能问何时没抢」限制 prior good acts。</li>
+            <li><strong>富士通展会：</strong>Harmon 链——非常规安保、持相机男子、护照/存储卡；辩方最小化。</li>
+            <li><strong>后勤：</strong>Juror 12 雇主仅付两周薪——长审的现实压力。</li>
+          </ul>
+          <a class="day-entry-cta" href="day-sept10.html">进入全日解读 →</a>
+        </article>
       </div>
-      <p>按 Inner City Press 笔记顺序拆解 <strong>9月9日</strong> 节拍。英文为庭上用语整理，中文为翻译；展开后可见三栏分析。<strong>笔记 ≠ 官方逐字稿</strong>；关键金句已与 Reuters / Law360 等核对，细节以法庭记录为准。</p>
-      <div class="note-box">
-        <span class="label-sc">阅读提示</span>
-        <p style="margin:0">开场陈述不是证据。分析讨论叙事功能与法律结构，不作有罪预测。不以中国官方媒体为事实权威；未声称观看视频物证。</p>
-      </div>
-
-      <div class="phase-divider"><span>一、法官开庭指示</span></div>
-
-<article class="beat" id="beat-1">
-  <div class="beat-header">
-    <span class="beat-num">节拍 01</span>
-    <span class="beat-speaker">法官 Ann M. Donnelly</span>
-    <span class="beat-phase">开庭指示</span>
-  </div>
-  <p class="quote-en">Jurors, we are ready to begin the trial. Do not read media about it, do not speak to each other about it, do not post to social media… Is the US ready?</p>
-  <p class="quote-zh">陪审员们，我们准备开始审判了。不要阅读相关媒体报道，不要互相讨论案件，不要在社交媒体上发帖……控方准备好了吗？</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>法官以标准联邦刑事审判开场白锁定陪审团隔离规则：禁止接触媒体、禁止相互讨论、禁止社交媒体发帖。随后以“Is the US ready?”（控方是否准备就绪）正式把发言权交给政府。这一套话术是美国联邦法院的例行程序，目的是防止庭外信息污染（extrajudicial influence），尤其在本案这种高度政治化、媒体密集报道的中美科技案件中。</p>
-    <h4>背景知识</h4>
-    <p>美国联邦陪审团审判中，法官对陪审员的“隔离指示”（admonition）具有法律效力；违反可能导致陪审员被除名、甚至在极端情况下引发无效审判（mistrial）动议。本案陪审员此前已填写长达约27页的问卷，其中包含对中国、伊朗政府态度的问题——这本身说明法院意识到地缘政治偏见风险。</p>
-    <h4>为何这么说</h4>
-    <p>法官在此刻强调“不要看媒体”，既是常规保护，也是对本案舆论环境的隐性承认：开庭日前后路透、卫报、AP、Law360密集报道，且审判日程与习近平—特朗普9月24日会晤重叠。把程序纪律说在最前面，是为后续可能出现的舆情干扰预留司法保护伞。</p>
-  </div>
-</details>
-</article>
-
-<div class="phase-divider"><span>二、控方开场陈述（Taylor Stout）</span></div>
-
-<article class="beat" id="beat-2">
-  <div class="beat-header">
-    <span class="beat-num">节拍 02</span>
-    <span class="beat-speaker">控方 Taylor Stout（DOJ）</span>
-    <span class="beat-phase">开场陈述 · 主题句</span>
-  </div>
-  <p class="quote-en">Theft. Lies. Cover-ups. For 20 years, that's how Huawei, a massive Chinese telecommunications company, victimized American companies and abused the American financial system, all in an effort to dominate the telecommunications industry around the world.</p>
-  <p class="quote-zh">盗窃。谎言。掩盖。二十年来，华为——这家庞大的中国电信公司——就是这样侵害美国企业、滥用美国金融体系，企图主宰全球电信产业。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>控方用三个单词（Theft / Lies / Cover-ups）定调，再以“二十年”时间跨度把零散指控焊接成一条叙事主线：知识产权盗窃 + 制裁规避/银行欺诈 + 掩盖行为 = 为全球电信主导权服务的犯罪企业。这是典型的 RICO 开场策略——先给陪审团一幅“企业犯罪画像”，再逐项填充证据。路透社 Karen Freifeld 报道确认了这段几乎逐字的引述。</p>
-    <h4>背景知识</h4>
-    <p>RICO（Racketeer Influenced and Corrupt Organizations Act）要求证明存在“企业”（enterprise）以及通过“模式化”（pattern）的敲诈勒索活动获取利益。控方把华为本身定性为犯罪企业，而非个别员工的偶发违规，这是本案与普通商业秘密民事纠纷的本质区别。约十二项罪名涵盖 RICO 共谋、银行欺诈、洗钱、IEEPA 制裁、电信欺诈、商业秘密共谋、妨碍司法等。</p>
-    <h4>为何这么说</h4>
-    <p>之所以开场即用道德色彩极强的三词节奏，是因为陪审团对技术细节（路由器源码、美元清算路径、Skycom 股权结构）缺乏直觉；控方必须先建立“坏人—受害者—动机”的情感框架，再让后续证人与文件“对号入座”。“dominate the industry”一句把商业竞争动机升格为犯罪动机——这正是辩方稍后要全力拆解的点。</p>
-    <p>另需留意开场陈述的“预期证据清单”功能：控方几乎点名了后续将出现的证据类型——内部激励、银行文件、视频、高管陈述——等于给陪审团发了一张核对表。接下来三个月，每次出示证据，控方都会默默问：核对表上这一格，勾了没有？</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-3">
-  <div class="beat-header">
-    <span class="beat-num">节拍 03</span>
-    <span class="beat-speaker">控方 Taylor Stout</span>
-    <span class="beat-phase">开场陈述 · 行为模式</span>
-  </div>
-  <p class="quote-en">Huawei paid a bonus to steal US technology. It concealed its use of the US financial system to do business in Iran. It kept the nature of its business in Iran secret, to launder through banks right here in NYS, to help Iran spy on its own citizens…</p>
-  <p class="quote-zh">华为通过支付奖金来盗窃美国技术。它隐瞒了利用美国金融系统在伊朗开展业务的事实。它将在伊朗业务的真实性质保密，以便通过纽约州本地银行洗钱，并帮助伊朗监控本国公民……</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>本段把控方叙事拆成三条并行管道：（1）激励结构——以奖金驱动窃取美国技术；（2）金融隐瞒——对银行隐瞒伊朗业务以便使用美元体系；（3）监控赋能——帮助伊朗对本国公民进行监视。地点词“right here in NYS”刻意把抽象国际制裁案锚定到陪审团所在的纽约州，强化本地关联（venue / community interest）。</p>
-    <h4>背景知识</h4>
-    <p>据路透社，检方称一家银行（消息源与文件指向汇丰 HSBC）为与 Skycom 相关的美元交易清算超过1亿美元；Law360 亦提到可能涉及 BNP Paribas、Standard Chartered。伊朗“合法监听/监控”能力的指控，与稍后第一证人 Beheshti 关于 Mobinet 数据中心与 lawful intercept 的证言直接对接。</p>
-    <p>洗钱共谋与银行欺诈在起诉书中常与 IEEPA 制裁条款并肩出现：前者关注资金转移与掩饰；后者关注是否未经授权与受制裁政权做受管制的交易或服务。开场把“纽约州银行”说出口，也是在提醒陪审团：本案不是远在中东的故事，而是资金曾流经他们所在司法辖区的故事。</p>
-    <h4>为何这么说</h4>
-    <p>控方在此同时服务多个罪名：商业秘密共谋需要“激励/政策”证据；银行欺诈与洗钱需要“隐瞒与美元通道”；IEEPA/制裁相关指控需要“伊朗业务性质”。把三条线绑在同一句里，是为了让陪审团感觉这不是“几桩独立丑闻”，而是同一台机器的不同齿轮。</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-4">
-  <div class="beat-header">
-    <span class="beat-num">节拍 04</span>
-    <span class="beat-speaker">控方 Taylor Stout</span>
-    <span class="beat-phase">开场陈述 · 企业同一性</span>
-  </div>
-  <p class="quote-en">And when confronted? Huawei lied to its banks, to get loans. These four companies, I will call them Huawei… When their leaders misled and lied, they were following company policy. They engaged in a pattern of criminal action for 20 years…</p>
-  <p class="quote-zh">当被质问时？华为向银行撒谎以获得贷款。这四家公司，我统称为华为……当其领导人误导和撒谎时，他们是在遵循公司政策。他们从事了长达二十年的犯罪活动模式……</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>关键修辞动作：把四家被告公司（Huawei Technologies、Huawei Device、Huawei Device USA、Futurewei）合并称呼为“Huawei”，并主张领导人撒谎是“遵循公司政策”——这是在为 RICO 的“企业政策/企业文化”要件铺路，也在预驳辩方“个别流氓员工”理论。Skycom 原为共同被告，后被撤回，但仍是叙事核心道具。</p>
-    <p>合并命名还有审判管理功能：避免陪审团在四个公司名之间迷失。但辩方将来可能要求在裁决表格（verdict form）上严格区分各被告实体的责任——尤其 Futurewei、Device USA 等美国实体与深圳母公司的证据权重未必相同。</p>
-    <h4>背景知识</h4>
-    <p>公司被告案件中，控方常需证明不法行为可归责于公司（corporate liability），例如经由高管授权、公司政策默许、或在职权范围内为公司利益行事。把“政策”一词提前植入，是为后续出示内部文件、奖励机制、层级指令做预期管理。</p>
-    <h4>为何这么说</h4>
-    <p>对陪审团而言，“四家公司=一家华为”降低了理解成本；对法律论证而言，则试图证明存在统一指挥的企业，而非松散子公司各自为政。辩方稍后会强调没有“公司范围共谋”（no companywide conspiracy），因此这一合并命名本身就是战场。</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-5">
-  <div class="beat-header">
-    <span class="beat-num">节拍 05</span>
-    <span class="beat-speaker">控方 Taylor Stout</span>
-    <span class="beat-phase">开场陈述 · 指挥链条</span>
-  </div>
-  <p class="quote-en">The parent Huawei Technology pulled the strings from China. The 2 subsidiaries in the US served as its outpost to steal. It ran to the very top, to the founder and his daughter, the CFO, crime and corruption…</p>
-  <p class="quote-zh">母公司华为技术从中国遥控一切。美国的两家子公司则作为其盗窃的前哨。这一切直达最高层——创始人及其女儿（CFO），充满犯罪与腐败……</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>控方画出“中国母公司牵线 → 美国子公司前哨 → 直达任正非与孟晚舟”的垂直指挥图。这既服务商业秘密盗窃叙事（美国实体便于接触美国公司），也服务制裁/银行欺诈叙事（CFO 对银行陈述）。“pulled the strings”是拟人化修辞，意在消解“大公司失控、基层乱来”的辩解空间。</p>
-    <h4>背景知识</h4>
-    <p>孟晚舟（Meng Wanzhou）2018年在加拿大被捕，经漫长引渡程序后于约2021年达成暂缓起诉协议（DPA），相关个人指控其后撤销；但 DPA 所附事实陈述（Statement of Facts, SOF）中的承认，检方称可在本案中作为对公司不利的证据使用。辩方强调 SOF 不含“故意欺诈意图”的承认。</p>
-    <h4>为何这么说</h4>
-    <p>把创始人与 CFO 点名，是为了满足陪审团对“谁下令”的直觉需求，并抬高案件的戏剧张力。但点名未出庭的个人（尤其是已通过外交—司法安排了结个人程序的孟晚舟）也有风险：辩方可攻击其偏见性与证明力边界。Law360 称控方将此交易视为足以“锁定”公司命运的关键证据之一。</p>
-    <p>从叙事学看，“女儿 CFO”比抽象的“财务条线”更容易让陪审团记住家族—公司一体的意象。控方显然愿意承担“过度戏剧化”的批评，以换取记忆点；这也解释了为何辩方必须在开场几分钟内用公寓创业故事抢回“家族=奋斗而非腐败”的象征权。</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-6">
-  <div class="beat-header">
-    <span class="beat-num">节拍 06</span>
-    <span class="beat-speaker">控方 Taylor Stout</span>
-    <span class="beat-phase">开场陈述 · IP 盗窃具象化</span>
-  </div>
-  <p class="quote-en">Huawei took a photo of the robot and sent it back to China. A Huawei employee even stole a piece of the robot, we have it on video… They stole from Cisco, router technology, its crown jewels…</p>
-  <p class="quote-zh">华为拍下机器人的照片并传回中国。一名华为员工甚至偷走了机器人的一个零件，我们有视频证据……他们还从思科盗窃了路由器技术——那是思科的核心技术（crown jewels）……</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>控方从抽象“二十年模式”骤降至极具画面感的物证：T-Mobile 手机测试机器人“Tappy”的拍照与偷零件，并宣称有视频；同时把思科路由器操作系统源码称为“crown jewels”。具象化是开场陈述的经典技巧——陪审团更容易记住“偷零件的录像”，而非“共谋窃取商业秘密”的法条语言。</p>
-    <p>同一开场段落里叠放“拍照传回中国”“偷零件”“思科皇冠珠宝”，是在制造累积效应：即使陪审团对某一个情节保留怀疑，三个情节连发也会抬高“不是巧合”的直觉概率。这正是 pattern 论证的心理学基础——辩方则必须逐个拆开，防止累积变成替代证明。</p>
-    <h4>背景知识</h4>
-    <p>据公开报道：检方称华为共谋窃取五家美国公司商业秘密（摩托罗拉相关主张已被政府放弃）；Tappy 另案在西雅图提起，目前搁置以待布鲁克林本案推进。富士通展会拍照事件亦在辩方开场中被定性为“一名员工的愚蠢行为并被迅速解雇”。Quintel、CNEX 等争议点，辩方称存在否认/不实指控。本文作者并未观看任何视频证据，仅转述庭上与媒体报道所称。</p>
-    <h4>为何这么说</h4>
-    <p>视频与“crown jewels”比喻的目的，是把商业秘密案从“工程师之间的灰色借鉴”拉升到“当场抓获的偷窃”。若陪审团接受这一框架，后续关于许可费、自主研发投入的辩方叙事就会显得像事后粉饰。反之，若辩方成功证明这些是孤立、已补救事件，画面感反而可能被反转为“控方用最戏剧化的碎片代表整体”。</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-7">
-  <div class="beat-header">
-    <span class="beat-num">节拍 07</span>
-    <span class="beat-speaker">控方 Taylor Stout</span>
-    <span class="beat-phase">开场陈述 · 伊朗/朝鲜与 Skycom</span>
-  </div>
-  <p class="quote-en">Huawei did business in Iran and North Korea, helping them to build their networks of surveillance, for Iran to spy on its own citizens. Its subsidiary in Iran, Skycom, it lied about it to get to use the US financial system…</p>
-  <p class="quote-zh">华为在伊朗和朝鲜开展业务，帮助它们建设监控网络，以便伊朗监控本国公民。其在伊朗的子公司 Skycom 为此撒谎，以便使用美国金融系统……</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>本段把制裁规避与“帮助威权监控”道德指控焊接：业务存在本身未必构成美国刑事犯罪，但“对银行撒谎以使用美元体系”与“提供可被用于镇压的监控能力”被控方说成同一阴谋的两面。Skycom 是叙事枢纽——路透社2012–2013年报道揭露华为与 Skycom 的紧密联系，构成检方早期调查的重要公开线索。</p>
-    <h4>背景知识</h4>
-    <p>Skycom Tech Co. Ltd. 曾被列为共同被告，后被撤回，但控方仍主张其由华为控制。孟晚舟曾在2008–2009年间担任 Skycom 董事（据路透）。IEEPA（国际紧急经济权力法）是美国对伊朗等地实施经济制裁的主要法律工具之一；银行欺诈则聚焦对金融机构的重大虚假陈述。</p>
-    <p>对朝鲜业务的提及在开场中着墨较少，却能扩大“受制裁政权组合”的印象面。实际证明上，伊朗—Skycom—银行线显然更成熟（有路透早期报道与孟晚舟程序沉淀）；朝鲜线更多承担“同类强化”功能，是否能独立支撑罪名，仍取决于后续举证厚度。</p>
-    <h4>为何这么说</h4>
-    <p>对布鲁克林陪审团而言，“帮助伊朗监控本国公民”比“美元清算路径是否触发制裁”更容易产生道德共鸣。控方显然希望第一证人 Beheshti 的愤怒证言在此预告中提前“上色”。辩方策略则是：把问题收缩为“是否欺骗银行”，而不是“你是否赞成伊朗政权”。</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-8">
-  <div class="beat-header">
-    <span class="beat-num">节拍 08</span>
-    <span class="beat-speaker">控方 Taylor Stout</span>
-    <span class="beat-phase">开场陈述 · 代号与否认</span>
-  </div>
-  <p class="quote-en">You'll learn that Huawei used secret code names for Iran and North Korea… So Huawei lied, sending its CFO to deny it. It was all lies…</p>
-  <p class="quote-zh">你们将了解到，华为用秘密代号指代伊朗和朝鲜……所以华为撒谎，派其 CFO 去否认。全都是谎言……</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>“秘密代号”在刑事叙事中常被用作“心虚/有意隐瞒”的情境证据（consciousness of guilt）。控方将其与“派 CFO 出面否认”串联，暗示最高财务官参与掩饰，而非基层误操作。这为引入孟晚舟2013年香港与汇丰会晤的陈述做铺垫。</p>
-    <h4>背景知识</h4>
-    <p>企业内部对受制裁地区使用内部项目名或代号，在合规诉讼中是双刃剑：控方说成掩饰；辩方可能说成普通商业保密、项目代码或历史合规混乱期的产物。关键仍在于：代号使用是否与对银行的具体虚假陈述存在证明链条。</p>
-    <h4>为何这么说</h4>
-    <p>重复“lies”是节奏策略，与开场三词呼应，形成首尾闭合。同时把孟晚舟从“公司高管”进一步推到“谎言执行者”角色，提升 SOF 承认的戏剧权重。</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-9">
-  <div class="beat-header">
-    <span class="beat-num">节拍 09</span>
-    <span class="beat-speaker">控方 Taylor Stout</span>
-    <span class="beat-phase">开场陈述 · 孟晚舟承认</span>
-  </div>
-  <p class="quote-en">The CFO admitted under oath that she told banks lies, she admitted that Huawei controlled Skycom…</p>
-  <p class="quote-zh">CFO 在宣誓后承认她向银行撒了谎，承认华为控制了 Skycom……</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>这是控方开场的“杀手锏句”：将个人 DPA/SOF 中的承认直接映射为对公司银行欺诈叙事的核心支撑。Law360 转述检方立场时甚至使用接近“seal the fate”的强度。但必须注意：辩方当场即预告——SOF 并非对“欺诈故意”的全盘供认。</p>
-    <h4>背景知识</h4>
-    <p>暂缓起诉协议（Deferred Prosecution Agreement）下的事实陈述，其证据可采性、证明范围与如何指示陪审团，往往是审前动议的焦点。公开报道称：孟承认对汇丰高管就伊朗业务与制裁合规作出若干重大不实陈述，以维持银行关系；但辩方强调其中没有承认“故意欺骗或欺诈任何人”的意图要件表述。欺诈类罪名通常需要证明 intent to defraud。</p>
-    <h4>为何这么说</h4>
-    <p>控方把复杂的 SOF 压缩成“承认撒谎+承认控制 Skycom”，是为了在开场就让陪审团觉得“公司自己人都认了”。辩方必须在开场立刻拆弹，否则这一印象会在长达约三个月的审判中持续发酵。</p>
-    <p>把“under oath”说出来，是为了提升承认的庄严等级——向陪审团暗示：这不是采访里的含糊说法，而是有仪式约束的正式承认。辩方的对冲必须同等清晰：仪式感不等于构成要件齐全，尤其当协议文本对“故意”保持沉默或保留时。</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-10">
-  <div class="beat-header">
-    <span class="beat-num">节拍 10</span>
-    <span class="beat-speaker">控方 Taylor Stout</span>
-    <span class="beat-phase">开场陈述 · 收束</span>
-  </div>
-  <p class="quote-en">Thefts, lies and cover-ups. At the end we will ask you to deliver the verdict, guilty as charged. Thank you.</p>
-  <p class="quote-zh">盗窃、谎言与掩盖。最后，我们将请求你们作出有罪裁决。谢谢。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>以开场三词的复数形式收束，完成主题句的首尾呼应，并明确诉求：就所控各项罪名裁决有罪。短促、决绝，符合美国刑事开场陈述“tell them what you will prove”的教科书结构。</p>
-    <h4>背景知识</h4>
-    <p>开场陈述不是证据，法官通常会指示陪审团：律师陈述仅是对证据的预期与论证框架，裁决只能基于庭上采纳的证据与法律指示。</p>
-    <h4>为何这么说</h4>
-    <p>把“有罪裁决”说在证据开始之前，是为了给陪审团一个记忆锚点；后续每个证人、每段视频、每份银行文件，控方都希望被自觉归类到 theft / lies / cover-ups 三格之一。</p>
-  </div>
-</details>
-</article>
-
-<div class="phase-divider"><span>三、程序转换</span></div>
-
-<article class="beat" id="beat-11">
-  <div class="beat-header">
-    <span class="beat-num">节拍 11</span>
-    <span class="beat-speaker">法官 Ann M. Donnelly</span>
-    <span class="beat-phase">程序转换</span>
-  </div>
-  <p class="quote-en">Does the defense wish to make an opening statement?</p>
-  <p class="quote-zh">辩方是否要进行开场陈述？</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>法官例行询问。被告方有权选择立即开场，或留待控方举证结束之后再开场。华为选择立即开场，显示其策略是：不能让控方的“犯罪企业”画像在陪审团脑中过夜发酵。</p>
-    <h4>背景知识</h4>
-    <p>在联邦刑事审判中，辩方开场陈述的时机具有战术意义。立即开场可以“解毒”，但也会提前暴露防御理论，使控方在直接询问中更有针对性地组织证人。</p>
-    <h4>为何这么说</h4>
-    <p>对本案这种叙事型 RICO 大案，立即开场几乎是必选项——否则“二十年犯罪企业”的标签可能在第一周就固化。</p>
-  </div>
-</details>
-</article>
-
-<div class="phase-divider"><span>四、辩方开场陈述（Brian Heberlig）</span></div>
-
-<article class="beat" id="beat-12">
-  <div class="beat-header">
-    <span class="beat-num">节拍 12</span>
-    <span class="beat-speaker">辩方 Brian Heberlig（Steptoe）</span>
-    <span class="beat-phase">开场陈述 · 创业神话</span>
-  </div>
-  <p class="quote-en">The founder started Huawei 40 years ago for $5000…</p>
-  <p class="quote-zh">创始人四十年前用五千美元创立了华为……</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>辩方以任正非公寓创业、$5000 起步的“勤劳起家”故事对冲控方“犯罪企业”画像。这是典型的品格/起源叙事（origin story）：把公司人格化，让陪审团看到“建设者”而非“掠夺者”。Law360 与路透均报道了这一开场路径。</p>
-    <p>数字“5000”与控方“100 million+”美元清算报道在陪审团记忆里会形成对照：小启动资金 vs 大金融体系。辩方用小数字讲勤劳，控方用大数字讲滥用——双方都在争夺对“钱”的道德解释权。</p>
-    <h4>背景知识</h4>
-    <p>任正非创办华为的公开叙事长期被用于品牌与公共关系；在刑事法庭上，其功能变为：为“innovation not theft”提供情感底座，并暗示成功来自积累而非一次性盗窃。</p>
-    <h4>为何这么说</h4>
-    <p>起源故事无法否定具体指控，但能降低陪审团对“从一开始就是黑帮式企业”的接受度，为后续“孤立员工违规+公司纠正”理论提供文化土壤。</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-13">
-  <div class="beat-header">
-    <span class="beat-num">节拍 13</span>
-    <span class="beat-speaker">辩方 Brian Heberlig</span>
-    <span class="beat-phase">开场陈述 · 规模与正当性</span>
-  </div>
-  <p class="quote-en">The company grew through hard work, now making hi-tech smart phones with folding screens. It has 200,000 employees in 170 countries. It partners with Apple and Samsung and IBM. Banks want its business…</p>
-  <p class="quote-zh">公司通过努力工作成长起来，现在生产带折叠屏的高科技智能手机。它在170个国家拥有约20万名员工，并与苹果、三星和IBM合作。银行主动寻求与它的业务……</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>用规模、产品与西方顶级科技/银行伙伴名录，论证华为是正常全球科技巨头，而非地下犯罪网络。“Banks want its business”直接反击“必须撒谎才能获得金融服务”的控方命题。</p>
-    <h4>背景知识</h4>
-    <p>公开报道中辩方还强调：华为投入巨额研发，并向全球领先科技公司支付许可费以使用技术，而非盗窃。Law360 记载辩方称对 Quintel、CNEX 的盗窃指控制是错误的；对 T-Mobile、Cisco、Fujitsu 则可归因于已纠正的个别员工行为。</p>
-    <h4>为何这么说</h4>
-    <p>把 Apple/Samsung/IBM 与银行并列，是在召唤权威背书：如果这些机构与华为合作或争相提供服务，那么“全面犯罪企业”叙事就显得夸张。当然，商业合作不等于刑事清白——但这正是开场要制造的合理怀疑气氛。</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-14">
-  <div class="beat-header">
-    <span class="beat-num">节拍 14</span>
-    <span class="beat-speaker">辩方 Brian Heberlig</span>
-    <span class="beat-phase">开场陈述 · 攻击控方方法</span>
-  </div>
-  <p class="quote-en">Huawei turned banks away. It had no reason to lie. The Government cherry-picks a few incidents, and uses unreliable witnesses…</p>
-  <p class="quote-zh">华为曾拒绝过银行。它没有理由撒谎。政府只是挑拣少数事件，并使用不可靠的证人……</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>核心防御逻辑链：（1）无撒谎动机（银行求着做生意，华为甚至拒绝银行）；（2）证据方法缺陷（cherry-picking）；（3）证人可信度（unreliable）。NBC/AP 报道称辩方还将部分证言归因于“旧怨”（old grudges）。</p>
-    <h4>背景知识</h4>
-    <p>在制裁/银行欺诈案中，“动机阙如”论证很常见：若被告不认为自己违法，或银行已知晓风险仍竞争业务，则“为获贷款而系统性撒谎”的故事不易成立。Law360 记载辩方称：是银行选择将交易路由经美元体系，本可用欧元完成；银行在制裁收紧前知晓伊朗业务却仍eager。</p>
-    <h4>为何这么说</h4>
-    <p>“cherry-picks”一词精准打击 RICO 的 pattern 要件：如果只是拼凑的轶事，就不能证明二十年公司范围共谋。这句话也是对后续交叉询问合作证人（含 Beheshti）的预告：动机会被放大检视。</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-15">
-  <div class="beat-header">
-    <span class="beat-num">节拍 15</span>
-    <span class="beat-speaker">辩方 Brian Heberlig</span>
-    <span class="beat-phase">开场陈述 · RICO 法理拆解</span>
-  </div>
-  <p class="quote-en">The Government charges RICO… But a label is not enough. And RICO is not a short cut. They have only a patchwork of allegations, no companywide conspiracy…</p>
-  <p class="quote-zh">政府提出 RICO 指控……但贴标签是不够的。RICO 也不是捷径。他们只有拼凑起来的指控，并没有公司范围的阴谋……</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>直接用法理语言降低 RICO 的恐吓效应：罪名标签≠证明；RICO 不能把普通商业纠纷“短路”成有组织犯罪。‘patchwork’与控方‘pattern’形成反义词对决——这是本案概念战场的中心。</p>
-    <h4>背景知识</h4>
-    <p>RICO 共谋要求证明被告同意通过企业的模式化敲诈活动追求目标。对公司被告而言，控方需跨越“个别不当行为”与“企业政策/高层知晓或故意无知”之间的鸿沟。辩方把这一鸿沟说成不可逾越。</p>
-    <p>历史上 RICO 虽起源于打击有组织犯罪，但已扩展至各类企业与白领语境，也因此更容易被批评为“过度指控”。法官最终会用陪审团指示精确化要件；开场阶段的标签战，争夺的是指示落地之前的直觉。</p>
-    <h4>为何这么说</h4>
-    <p>对非法律背景陪审员，“RICO”可能联想到黑帮电影。辩方必须尽早祛魅，否则标签本身就会完成控方一半的说服工作。</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-16">
-  <div class="beat-header">
-    <span class="beat-num">节拍 16</span>
-    <span class="beat-speaker">辩方 Brian Heberlig</span>
-    <span class="beat-phase">开场陈述 · IP 事件定性</span>
-  </div>
-  <p class="quote-en">T-Mobile and Cisco? Isolated actions, Huawei tried to make it right…</p>
-  <p class="quote-zh">T-Mobile 和思科的事件？那是孤立行为，华为曾试图纠正……</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>针对控方最有画面感的 IP 指控，辩方给出标准公司辩护：孤立（isolated）+ 补救（make it right）。路透报道中，辩方称思科与 T-Mobile 事件是个别员工行为，管理层得知后设法纠正；富士通拍照则为foolish act并迅速解雇。</p>
-    <h4>背景知识</h4>
-    <p>商业秘密刑事案件中，公司事后纪律处分、和解、流程整改，既可能被辩方用作缺乏犯罪故意/企业文化的证据，也可能被控方反用为“事后掩盖”或“承认问题存在”。如何定性补救措施，将是举证阶段的持续拉锯。</p>
-    <h4>为何这么说</h4>
-    <p>开场先把“视频偷零件”降级为可补救的个别事件，是为了防止陪审团用最强情节代表全部五家所谓受害公司主张——其中部分主张辩方称根本不成立。</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-17">
-  <div class="beat-header">
-    <span class="beat-num">节拍 17</span>
-    <span class="beat-speaker">辩方 Brian Heberlig</span>
-    <span class="beat-phase">开场陈述 · 伊朗业务重新框定</span>
-  </div>
-  <p class="quote-en">The assistance to Iran was civilians, even if some partners were owned by the government. Some surveillance is legal, under local law. The question is not whether you approve of it, but if Huawei misled banks…</p>
-  <p class="quote-zh">对伊朗的协助是民用性质的，即使有些合作伙伴由政府拥有。一些监控在当地法律下是合法的。问题不在于你们是否赞成这种做法，而在于华为是否误导了银行……</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>精巧的争点收缩（issue-narrowing）：把道德与地缘政治问题推出陪审团的任务清单，只留下“是否误导银行”这一可争辩的法律事实。同时用“民用”“当地合法监听”降低“帮助残暴政权”叙事的毒性。</p>
-    <h4>背景知识</h4>
-    <p>电信设备商在多国提供的“合法监听”（lawful interception）接口，常是当地电信监管/执法要求的一部分；但在美国对伊制裁与出口管制背景下，向伊朗实体提供某些技术、服务或支持美元交易，可能触发独立的法律风险。辩方试图区分：合规于伊朗当地法 ≠ 违反美国刑法；美国刑法焦点应在银行陈述与制裁故意。</p>
-    <h4>为何这么说</h4>
-    <p>这句话几乎是为即将出场的 Beheshti 证言打预防针：证人会谈及愤怒、独裁、监控；辩方则要求陪审团不要把愤怒当成银行欺诈的构成要件。Law360 记载辩方后因证言“过于地缘政治”而提出无效审判动议（被拒）。</p>
-    <p>这句几乎可当作辩方全案的认识论宣言：把审判从“国际政治道德课堂”拽回“陈述是否重大不实、是否具欺诈故意”的狭通道。若陪审团接受此框架，Beheshti 的愤怒证言就更多变成背景噪音；若不接受，愤怒会直接成为归责捷径。</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-18">
-  <div class="beat-header">
-    <span class="beat-num">节拍 18</span>
-    <span class="beat-speaker">辩方 Brian Heberlig</span>
-    <span class="beat-phase">开场陈述 · 收束与路透金句</span>
-  </div>
-  <p class="quote-en">Huawei WILL present a defense, to explain. Investment, innovation and competition, not racketeering. Huawei outgrew the founder’s apartment, competing and succeeding in the right way. We’ll ask you to find, not guilty. Thank you.</p>
-  <p class="quote-zh">华为将会提出辩护，来解释这一切。这是投资、创新与竞争，而非敲诈勒索。华为已经从创始人的公寓走出来，通过正确的方式竞争并取得成功。我们将请求你们作出无罪裁决。谢谢。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>强调 WILL present a defense（将会举证），避免陪审团误以为辩方只能靠攻击控方。收束口号与路透引述的金句一致：“It's about competition, not conspiracy. Innovation, not theft… There was no blueprint for crime.”（竞争而非共谋；创新而非盗窃；没有犯罪蓝图。）</p>
-    <h4>背景知识</h4>
-    <p>在美国刑事审判中，被告无举证责任；但公司大案中，完全“干等控方失败”的策略对陪审团观感不佳。预告将系统讲解研发投入、许可费、纠正措施与银行关系，是在承诺一个完整的替代故事。</p>
-    <h4>为何这么说</h4>
-    <p>“no blueprint for crime”直接对撞控方“company policy / pulled the strings”。两个开场陈述结束后，陪审团面前不是证据，而是两幅互斥的公司肖像——后续三个月将是肖像与证据的匹配过程。</p>
-  </div>
-</details>
-</article>
-
-<div class="phase-divider"><span>五、第一证人直接询问（Parham Beheshti）</span></div>
-
-<article class="beat" id="beat-19">
-  <div class="beat-header">
-    <span class="beat-num">节拍 19</span>
-    <span class="beat-speaker">控方询问 / 证人 Parham Beheshti（Baheshti）</span>
-    <span class="beat-phase">直接询问 · 数据中心</span>
-  </div>
-  <p class="quote-en">AUSA: How many data centers did Huawei construct in Iran while you were there? — Witness: There was one, and there was a second under construction…</p>
-  <p class="quote-zh">控方：你在伊朗期间，华为建了多少个数据中心？——证人：有一个，还有一个正在建设中……</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>第一证人将开场中的伊朗叙事落地为可感知的基础设施：华为在伊建设/在建数据中心。据 Law360，Beheshti 约2009–2010年任 Mobinet（当时快速成长的伊朗无线互联网提供商）应用与软件经理；他称 Mobinet 所属企业家族与伊朗最高领袖关系密切。</p>
-    <h4>背景知识</h4>
-    <p>数据中心本身是中性技术设施；控方需要下一步把它连到“谁控制、是否含监听能力、是否服务于情报机构”。证人背景：在伊朗长大，赴美求学，2000年成美国公民，2003年返回伊朗，后因担忧迫害离开，并向美方提供与华为往来的信息。</p>
-    <p>Mobinet 被描述为当时快速成长、旨在把互联网带往伊朗偏远地区的提供商；证人称其所属企业网络与最高领袖家族关系密切。这一背景让“民用上网”与“政权监控”的张力更加尖锐——也更容易点燃辩方担忧的政治化风险。</p>
-    <h4>为何这么说</h4>
-    <p>从“有没有建设”这种低争议事实切入，是直接询问的稳妥开局：先建立证人亲历性与具体性，再进入敏感的 lawful intercept 主题，降低一上来就陷入政治争吵的风险。</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-20">
-  <div class="beat-header">
-    <span class="beat-num">节拍 20</span>
-    <span class="beat-speaker">控方询问 / 证人 Beheshti</span>
-    <span class="beat-phase">直接询问 · 人员构成</span>
-  </div>
-  <p class="quote-en">AUSA: What was the make up of workers? — Witness: 90% Chinese in tech, Iranians in sales.</p>
-  <p class="quote-zh">控方：工作人员的构成是怎样的？——证人：技术人员中90%是中国人，销售人员是伊朗人。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>人员结构证言被用来暗示：技术核心由中方掌控，伊方负责本地销售接口——为下一句“Who was in control? Chinese”做铺垫。这与控方“母公司从中国牵线”的开场主题同构。</p>
-    <h4>背景知识</h4>
-    <p>在跨国项目中，供应商派遣本国工程师、本地伙伴负责销售与政府关系并不罕见。因此该证言的证明力取决于是否能进一步连接到决策权、合同条款与监听功能设计，而非仅止于国籍比例。</p>
-    <h4>为何这么说</h4>
-    <p>控方需要的是“控制权在中国侧”的生活化证据，以便把 Skycom/华为伊朗业务说成华为主导，而非独立本地经销。</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-21">
-  <div class="beat-header">
-    <span class="beat-num">节拍 21</span>
-    <span class="beat-speaker">控方询问 / 证人 Beheshti</span>
-    <span class="beat-phase">直接询问 · 控制权</span>
-  </div>
-  <p class="quote-en">AUSA: Who was in control? — Witness: Chinese were in control.</p>
-  <p class="quote-zh">控方：谁在控制？——证人：中国人在控制。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>一句短答，服务多个争点：企业同一性、对伊业务的主导、以及“华为控制 Skycom”叙事的情境支持。它不是法律结论，而是事实证人的观察；但其措辞极利于控方开场中的 vertical control 图景。</p>
-    <h4>背景知识</h4>
-    <p>交叉询问中，辩方可能追问：所谓控制是指现场工程师、项目经理，还是合同与财务决策？观察者的职位（应用/软件经理）决定其视野边界。</p>
-    <h4>为何这么说</h4>
-    <p>控方在开场承诺陪审团将看到“内部视角”；Beheshti 的此句就是在兑现“谁说了算”的直觉问题。</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-22">
-  <div class="beat-header">
-    <span class="beat-num">节拍 22</span>
-    <span class="beat-speaker">控方询问 / 证人 Beheshti</span>
-    <span class="beat-phase">直接询问 · 合法监听提案</span>
-  </div>
-  <p class="quote-en">AUSA: Did it say it should support lawful interception? — Witness: Yes… This is a Huawei proposal. … It says Huawei will support lawful intercept, sensitive.</p>
-  <p class="quote-zh">控方：文件里有没有说要支持合法监听？——证人：有……这是一份华为的提案。……上面写着华为将支持合法监听，这是敏感事项。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>证言将“合法监听”直接挂到“华为提案”上，并点出 sensitive。据 Law360，Beheshti 称交易部分内容涉及为伊朗情报部门建造后门式能力，可在“甚至不通知我们”的情况下有效窃听用户。NBC/AP 引述其称华为在会上推销“分析伊朗民众及其线上行为”。</p>
-    <h4>背景知识</h4>
-    <p>Lawful interception 在电信业是专业术语，通常指依法授权的通信监控接口。争议在于：在伊朗情境下，该能力是否超出常规合规接口、是否与出口管制/制裁风险叠加、以及向陪审团展示时如何避免变成对伊朗政权的政治审判。</p>
-    <h4>为何这么说</h4>
-    <p>控方需要把技术文件语言翻译成陪审团能懂的“监控工具”；证人同时提供文件识别（Huawei proposal）与道德反应，为妨碍司法/制裁叙事之外的“帮助监控”主题提供血肉。</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-23">
-  <div class="beat-header">
-    <span class="beat-num">节拍 23</span>
-    <span class="beat-speaker">控方询问 / 证人 Beheshti</span>
-    <span class="beat-phase">直接询问 · 术语解释</span>
-  </div>
-  <p class="quote-en">AUSA: What is lawful intercept? — Witness: Security agency monitoring. — AUSA: What is high performance? — Witness: 1% can be tapped.</p>
-  <p class="quote-zh">控方：什么是合法监听？——证人：安全机构的监控。——控方：什么是高性能？——证人：可以监听1%的通信。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>通过一问一答把行话变成数字：所谓高性能监听≈可触及约1%通信。这种“技术→百分比”的转译极利于非技术陪审员理解规模感。是否精确、上下文是否完整，将是交叉询问可能进攻的点，但开场日的直接询问已先植入印象。</p>
-    <h4>背景知识</h4>
-    <p>Inner City Press 现场笔记提供了这一问答骨架；其并非官方逐字稿，百分比含义需以庭上展示的文件与完整问答为准。媒体报道还强调证人称相关技术“远超时代”，可阻断民众获取新闻与社交网络。</p>
-    <h4>为何这么说</h4>
-    <p>控方在此做的是教育陪审团：监听不是抽象恐惧，而是可量化的能力指标。数字比形容词更难忘。</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-24">
-  <div class="beat-header">
-    <span class="beat-num">节拍 24</span>
-    <span class="beat-speaker">控方询问 / 证人 Beheshti</span>
-    <span class="beat-phase">直接询问 · 双用途与愤怒</span>
-  </div>
-  <p class="quote-en">Witness: Users don’t know they are being tapped. — AUSA: Is this a case of dual use? — Witness: Yes – it can be used for parental control or government surveillance. — AUSA: What was your reaction? — Witness: I was shocked and angry they were giving this power to a brutal regime.</p>
-  <p class="quote-zh">证人：用户并不知道自己正在被监听。——控方：这是不是双重用途？——证人：是的——既可以用于家长控制，也可以用于政府监控。——控方：你当时的反应？——证人：我感到震惊和愤怒，他们竟然把这种权力交给一个残暴的政权。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>“dual use”（两用）是出口管制与合规语境的关键词：同一技术可民用也可被政府用于监控。证人再以“brutal regime”给出强烈规范判断。Law360 引述其庭上表述：“They helped a dictatorship to rule and suppress people.” NBC 引述其感到“infuriating”。</p>
-    <p>“家长控制 vs 政府监控”的对比，是专家证人常用的两用性教学法，由事实证人说出来则更带冲击：他不是在抽象讨论合规分类，而是在讲述自己意识到技术被交给谁的那一刻。控方借此跨越从说明书到道德责任的跳板。</p>
-    <h4>背景知识</h4>
-    <p>辩方认为此类证言过度滑向伊朗国内政治与人权控诉，偏离银行欺诈/公司共谋的核心争点，并曾以此为由请求无效审判；Donnelly 法官当即驳回。这表明法院现阶段愿意给控方较宽的叙事空间，但也预示后续可能需要更多限制性指示（limiting instructions）。</p>
-    <h4>为何这么说</h4>
-    <p>控方要的不只是技术事实，而是动机与可责性的情感证据：如果连合作方经理都“震惊愤怒”，则“纯民用、不知情”的辩解更难听。但过强的道德语言也可能触发陪审团对偏见的警觉——尤其问卷已问及对伊朗政府看法。</p>
-  </div>
-</details>
-</article>
-
-<div class="phase-divider"><span>六、交叉询问</span></div>
-
-<article class="beat" id="beat-25">
-  <div class="beat-header">
-    <span class="beat-num">节拍 25</span>
-    <span class="beat-speaker">辩方交叉询问 / 证人 Beheshti</span>
-    <span class="beat-phase">交叉询问 · 合作史</span>
-  </div>
-  <p class="quote-en">Defense: Since 2010 you have been cooperating with the US? — Witness: Yes.</p>
-  <p class="quote-zh">辩方：自2010年以来你一直在与美方合作？——证人：是的。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>辩方迅速打出“长期合作证人”标签，暗示证言可能受执法关系、期望或身份安排影响。与开场中“unreliable witnesses”承诺相呼应。据报道，证人在了解华为后向美方提供信息，约2011年因被告知受调查而离开伊朗。</p>
-    <h4>背景知识</h4>
-    <p>合作证人（cooperator）在美国刑事审判中极常见；其证言可采用，但陪审团必须评估利益偏差。Law360 亦提到检方至少有一名为争取宽大而认罪的合作者（Heberlig 在开场中指摘）。Beheshti 是否属于正式 plea 合作者，公开报道更强调其向当局“喂送信息”与个人政治立场。</p>
-    <h4>为何这么说</h4>
-    <p>把合作起点定在2010，是为了说明：其与案件的关系不是“偶然路过的中立工程师”，而是十余年时间线上的信息提供者——从而要求陪审团用更高怀疑密度倾听。</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-26">
-  <div class="beat-header">
-    <span class="beat-num">节拍 26</span>
-    <span class="beat-speaker">辩方交叉询问 / 证人 Beheshti</span>
-    <span class="beat-phase">交叉询问 · 儿子转移</span>
-  </div>
-  <p class="quote-en">Defense: They helped smuggle your son out of Iran? — Witness: Yes.</p>
-  <p class="quote-zh">辩方：他们帮助把你的儿子偷运出伊朗？——证人：是的。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>这是极重的偏见弹药：美方协助将其儿子带出伊朗，构成具体、可感知的利益。辩方无需证明证言虚假，只需让陪审团问：“他是否有理由把故事讲得更合美方心意？”</p>
-    <h4>背景知识</h4>
-    <p>人身安全与家属转移在对威权国家案件的合作者中并不罕见，也可能同时是真实风险与真实利益。法官通常允许交叉询问探究偏见，同时防止审判变成对证人移民/救援过程的全面旁支调查。</p>
-    <p>此类交叉询问的法律边界是：允许探究偏见与利益，一般不允许无限制地展开情报合作细节或危及第三人安全的信息。法庭记录若对某些答案有所限制，公开笔记可能无法完整呈现——读者应保持方法上的谦逊。</p>
-    <h4>为何这么说</h4>
-    <p>放在“愤怒指控残暴政权”的直接询问之后，这一问的戏剧效果是：愤怒既可以来自良知，也可以与个人救赎叙事缠绕——陪审团必须自己解缠。</p>
-  </div>
-</details>
-</article>
-
-
-<article class="beat" id="beat-27">
-  <div class="beat-header">
-    <span class="beat-num">节拍 27</span>
-    <span class="beat-speaker">辩方交叉询问 / 证人 Beheshti</span>
-    <span class="beat-phase">交叉询问 · 动机定性</span>
-  </div>
-  <p class="quote-en">Defense: It is your objective to hurt the Iranian regime? — Witness: To get justice.</p>
-  <p class="quote-zh">辩方：你的目标是伤害伊朗政权吗？——证人：是为了追求正义。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>辩方试图把证人动机钉死为政治报复；证人则以“justice”重新道德化自身动机。一字之差，却是交叉询问中经典的动机拉锯：hurt vs justice。无论哪一方，都提醒陪审团——本案证人不是情绪真空的仪器。</p>
-    <h4>背景知识</h4>
-    <p>动机弹劾（impeachment by bias）不自动消灭证言内容；控方后续可通过一致性文件、第三人证言、技术标书等予以补强。若文件确实写明 Huawei support for lawful intercept，则动机攻击只能减损、不能必然摧毁。</p>
-    <h4>为何这么说</h4>
-    <p>辩方用此收束第一日交叉，是为了在休庭前留下最后印象：你们听到的是正义使者，还是有议程的长期合作者？法官随即宣布当日结束，使这一印象成为过夜记忆。</p>
-  </div>
-</details>
-</article>
-
-<div class="phase-divider"><span>七、当日休庭与附带程序（Law360 交织）</span></div>
-
-<article class="beat" id="beat-28">
-  <div class="beat-header">
-    <span class="beat-num">节拍 28</span>
-    <span class="beat-speaker">法官 Ann M. Donnelly</span>
-    <span class="beat-phase">休庭</span>
-  </div>
-  <p class="quote-en">We'll break for the day.</p>
-  <p class="quote-zh">我们今天到此结束。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>第一日完成：双方开场 + 第一证人直接询问主要部分与交叉起手。据 Law360，Beheshti 证词将于次日继续；辩方因证言涉及伊朗最高领袖批评及安全部队在抗议中枪杀年轻女孩等表述，认为“完全不适当”并提出 mistrial，被法官迅速拒绝。</p>
-    <p>第一日的信息密度极高：完整开场对决 + 证人情绪高潮 + 程序动议被拒。对媒体而言，足够写成全球头条；对陪审团而言，则可能造成“故事已经听完”的错觉。双方律师都清楚：真正决定案件的，往往是第二周以后那些枯燥的邮件时间戳与银行电文。</p>
-    <h4>背景知识</h4>
-    <p>无效审判动议在煽动性证言出现时很常见；当庭驳回并不意味着证据完全无限制，而意味着法官认为尚不构成无法通过指示或剔除来补救的严重偏见。西雅图 Tappy 平行案继续搁置；汇丰亚太前银行家等证人在预期名单上。</p>
-    <h4>为何这么说</h4>
-    <p>第一日结束后，陪审团带着两套完整开场叙事与一位情绪强烈的伊朗业务证人回家——这正是双方都想争夺的“第一印象窗口”。真正的银行文件、孟晚舟 SOF、思科/Tappy 技术证据尚未展开，评判仍远未成熟。</p>
-  </div>
-</details>
-</article>
-
-
-      <div class="note-box" style="margin-top:2rem">
-        <span class="label-sc">Law360 交织要点（第一日）</span>
-        <p style="margin:0">除上述节拍外，公开报道补充：汇丰银行家预期出庭；西雅图 Tappy 案搁置；辩称对 Quintel/CNEX 指控不实；存在为求宽大之合作者；华为强调许可费与巨额研发；美元路由由银行选择、银行在制裁收紧前知晓伊朗业务；Beheshti 称华为“帮助独裁统治并镇压人民”；辩方 mistrial 被 Donnelly 法官拒绝。这些内容应与上列节拍对照阅读，而非替代官方证据。
-        </p>
-      </div>
-
-      <div class="note-box" id="day2-bridge" style="margin-top:2.5rem">
-        <span class="label-sc">Day break</span>
-        <p style="margin:0">以上为 <strong>2026年9月9日</strong> 开庭陈述与第一日证言节拍。以下进入 <strong>9月10日（周四）</strong> 的 Inner City Press 现场笔记逐段解读：Beheshti 交叉收束 → Futurewei 证人 Linda Schnider → 证据规则 404/善行辩论 → 富士通展会证人 Harmon 链条。笔记仍<strong>不等于</strong>官方逐字稿。</p>
-      </div>
-    </section>
-
-    <!-- DAY 2 -->
-    <section id="sec-day2">
-      <span class="label-sc">September 10, 2026 · Testimony Day Two</span>
-      <h2 class="section-h">9月10日庭审解读（逐段）</h2>
-
-      <div class="toolbar-expand">
-        <button type="button" data-expand-all="#sec-day2">全部展开解读</button>
-        <button type="button" data-collapse-all="#sec-day2">全部收起</button>
-        <span class="hint">默认折叠 · 共 20 个节拍</span>
-      </div>
-      <p>第二日：Beheshti 弹劾收束 → Futurewei / Schnider 文化线 → 404 善行限制（银行抢劫类比）→ 富士通展会 Harmon 链。共 <strong>20</strong> 节拍。</p>
-
-      <div class="phase-divider"><span>八、Beheshti 交叉收束（9月10日上午）</span></div>
-
-<article class="beat" id="beat-d2-01">
-  <div class="beat-header">
-    <span class="beat-num">9/10 · 节拍 01</span>
-    <span class="beat-speaker">辩方交叉 / 证人 Parham Beheshti</span>
-    <span class="beat-phase">第二日交叉继续</span>
-  </div>
-  <p class="quote-en">You were an American working in Iran, it was illegal and you lied about it? — Beheshti: I signed it</p>
-  <p class="quote-zh">辩方：你当时是在伊朗工作的美国人，这是违法的，并且你为此撒了谎？——Beheshti：我签了（那份文件/表格）。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>第二日一开始，辩方把弹劾从“政治动机/儿子转移”推进到“证人自身守法记录”：作为美国人在伊朗工作是否违法、是否说谎。证人未做长篇辩解，而以“I signed it”承认签署行为，把焦点落在文件签名上。这是经典的 credibility impeachment：先让证人承认自己也曾处于法律灰色或违规地带，再追问其道德资格去指责他人。</p>
-    <h4>背景知识</h4>
-    <p>美国联邦证据规则（FRE）允许以偏见、利益、先前不实陈述等攻击证人可信度；但并非一切“坏事”都可无限展开——与案件争点远、且主要用以激起反感的材料，可能依 FRE 403 被限制。第一日已铺垫合作史与家属协助，第二日则转向“你自己是否守法”。</p>
-    <h4>为何这么说</h4>
-    <p>辩方需要在陪审团仍记得证人“震惊愤怒”的直接询问之后，尽快完成人物翻转：从道德控诉者变成自身有瑕疵的长期合作者。逼出“I signed it”是短促而有效的台阶，为下一问“政府从未起诉你”做铺垫。</p>
-  </div>
-</details>
-</article>
-
-<article class="beat" id="beat-d2-02">
-  <div class="beat-header">
-    <span class="beat-num">9/10 · 节拍 02</span>
-    <span class="beat-speaker">辩方律师 / 控方反对 / 法官 / 证人 Beheshti</span>
-    <span class="beat-phase">异议与安全许可表格</span>
-  </div>
-  <p class="quote-en">Huawei lawyer: And the Government never prosecuted you— AUSA Objection; Judge Sustained. Lawyer: You wrote lies on your security clearance form, correct? Beheshti: I'm not the one who filled it out</p>
-  <p class="quote-zh">华为律师：而且政府从未起诉过你——控方反对；法官支持（sustained）。律师：你在安全许可申请表上写了谎言，对吗？——Beheshti：填那张表的人不是我。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>律师试图明示“你违法却未被起诉”，暗示证人因合作而获得事实上的豁免或宽纵；控方立即反对，法官 sustains，切断这句完整说完。律师随即改打“security clearance form 上的谎言”；证人否认自己填写，把责任推给他人/程序。攻防在极短回合内完成：被禁的问题与被允许的问题之间，只隔一次裁定。</p>
-    <h4>背景知识</h4>
-    <p>暗示“未被起诉=交易/庇护”极易触发不公正偏见（unfair prejudice）与“打开门户”争议，也接近评论检方裁量权。法官用 sustained 把陪审团从“检方偏心”叙事拉回。安全许可表格的虚假陈述在其他语境下可能构成独立问题，但在此主要服务于弹劾。证人答“不是我填的”是典型的否认亲笔/否认知情策略。</p>
-    <h4>为何这么说</h4>
-    <p>辩方仍要把“豁免感”种进陪审团心里，哪怕句子被打断——未说完的半句往往同样有印象。控方反对成功，说明 Donnelly 法官愿意给弹劾设边界：可以打可信度，但不允许把审判变成对检方起诉裁量的公审。</p>
-    <p>从证据策略看，sustained 并不等于辩方失败：半截问句已让陪审团听到“从未被起诉”的暗示，而法官裁定又让控方显得紧张。双方都在用程序动作本身说话。安全许可表格的下一问则把弹劾拉回证人具体陈述，避免完全空手。</p>
-  </div>
-</details>
-</article>
-
-<article class="beat" id="beat-d2-03">
-  <div class="beat-header">
-    <span class="beat-num">9/10 · 节拍 03</span>
-    <span class="beat-speaker">辩方 / Beheshti / 转证人 Linda Schnider</span>
-    <span class="beat-phase">收束弹劾 · 传新证人</span>
-  </div>
-  <p class="quote-en">Lawyer: So for you, the ends justify the means? Beheshti: I signed the form. No further questions. No re-direct. Next witness Linda Schnider (sworn). Lives Sparks, Nevada</p>
-  <p class="quote-zh">律师：所以对你来说，是目的证明手段正当？——Beheshti：我签了那份表。辩方无进一步问题。控方无再直接询问。下一位证人 Linda Schnider 宣誓。居住于内华达州 Sparks。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>“ends justify the means”是把弹劾升格为品格命题的收官一刺；证人再次回到“I signed the form”，既不完全吞下道德指控，也不展开辩论。双方都选择不继续（无 further / no re-direct），显示在伊朗证人线上，第一阶段证据已按各自剧本点到为止。舞台迅速切到 Futurewei 前雇员 Linda Schnider——IP/企业文化线正式开场。</p>
-    <h4>背景知识</h4>
-    <p>再直接询问（re-direct）常用于修复交叉造成的伤害；控方选择放弃，可能是为了避免给辩方更多弹劾出口，或判断修复成本高于收益，并急于把陪审团带入商业秘密“内部文化”证据。Schnider 来自 Sparks, Nevada，对应华为美国研发相关实体 Futurewei 的证人地理分布。</p>
-    <p>无再直接询问（no re-direct）有时是控方的冷静选择：交叉造成的擦伤若去修，可能让伤口看起来更大。伊朗线至此阶段性闭合，IP 线立刻上场，避免陪审团在午餐前只记住弹劾。</p>
-    <h4>为何这么说</h4>
-    <p>叙事功能上，这是案件结构的换轨：从“伊朗—监控—银行欺诈”的道德高压，切到“美国子公司—专利掠取—向中国回传”的白领盗窃故事，以兑现开场中“US subsidiaries as outposts”的承诺。</p>
-  </div>
-</details>
-</article>
-
-      <div class="phase-divider"><span>九、证人 Linda Schnider（Futurewei）直接询问</span></div>
-
-<article class="beat" id="beat-d2-04">
-  <div class="beat-header">
-    <span class="beat-num">9/10 · 节拍 04</span>
-    <span class="beat-speaker">控方直接询问 / 证人 Linda Schnider</span>
-    <span class="beat-phase">Futurewei 任职与云业务</span>
-  </div>
-  <p class="quote-en">Worked for Futurewei (US sub) 3 years, cloud computing under Andy Chen from Huawei China. Patents: didn't read them but some did</p>
-  <p class="quote-zh">在 Futurewei（美国子公司）工作约三年，云计算业务，上级 Andy Chen 来自中国华为。关于专利：她本人没读那些专利，但有些人读了。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>Schnider 自我定位为 Futurewei 云计算线员工，并点出汇报对象 Andy Chen“来自中国华为”——把美国实体与中国母公司的人员管道一句话说清。对专利的态度分层：自己未读，但“有些人读了”，为下一步“中国工程师研读并使用专利信息且引以为傲”做铺垫。</p>
-    <h4>背景知识</h4>
-    <p>Futurewei 是本案共同被告之一，控方开场称美国子公司是盗窃“前哨”。云计算线与后续外媒所见之云平台相关 IP 证言同属故事簇，但本页严格按当日笔记呈现 Schnider 所述，不把其他报道细节强加于她。</p>
-    <h4>为何这么说</h4>
-    <p>控方需要的不是每位工程师都读过专利，而是证明存在一种被上级看见、未被制止的实践；‘有些人读了’正好把网撒开，同时保持证人不夸大个人角色。</p>
-  </div>
-</details>
-</article>
-
-<article class="beat" id="beat-d2-05">
-  <div class="beat-header">
-    <span class="beat-num">9/10 · 节拍 05</span>
-    <span class="beat-speaker">控方直接询问 / Linda Schnider</span>
-    <span class="beat-phase">专利使用文化与上报无果</span>
-  </div>
-  <p class="quote-en">Engineers from China went through patents and used info, proud of it; she concerned; told Andy Chen — nothing happened; lead Jim Hughes agreed</p>
-  <p class="quote-zh">来自中国的工程师翻阅专利并使用其中信息，还引以为傲；她对此担忧；告知 Andy Chen——没有下文；负责人 Jim Hughes 亦表认同（她的担忧）。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>这是第二日对控方 RICO/商业秘密叙事最关键的“文化证言”之一：问题被描述为公开、得意的实践，而非偷偷摸摸的个人作案；上报经理无结果；另一位 lead 认同担忧——说明不是证人一人过敏。‘proud of it’一词极具杀伤力，暗示规范倒置。</p>
-    <p>若把此证言与开场“paid a bonus to steal”并读，控方想要的画面是：激励与文化一致，盗窃不是事故。但“翻阅专利”在工程实践中可能只是跟踪竞品公开文件；因此后续是否出现非公开源代码、内部规格或客户保密材料，将决定这条线是 RICO 主干还是被辩方拆掉的枝丫。</p>
-    <h4>背景知识</h4>
-    <p>在公司犯罪案件中，‘上报后无行动’常被用来证明默许、故意无视或政策纵容。辩方日后可能攻击：她是否误解合法的专利阅读（专利本为公开文件）、是否把正当 prior art 研究说成盗窃、以及‘used info’是否达到商业秘密窃取标准。专利公开可得与窃取非公开商业秘密并非同一法律范畴——分析上必须分开，尽管控方叙事会把它们放在同一道德篮子里。</p>
-    <h4>为何这么说</h4>
-    <p>控方用这条线回应辩方开场的“孤立员工”：若中国来的工程师群体性行为 + 美国线经理不作为，则更像 outpost 执行母公司方法。Jim Hughes 的认同则提供内部印证，降低“她是逆反员工”的单一来源风险。</p>
-  </div>
-</details>
-</article>
-
-<article class="beat" id="beat-d2-06">
-  <div class="beat-header">
-    <span class="beat-num">9/10 · 节拍 06</span>
-    <span class="beat-speaker">控方直接询问 / Linda Schnider</span>
-    <span class="beat-phase">数据回传中国与辞职</span>
-  </div>
-  <p class="quote-en">Futurewei data backed up to Huawei in China; concerned; didn't report (knew nothing would happen); next Monday gave notice</p>
-  <p class="quote-zh">Futurewei 的数据会被备份到中国的华为；她感到担忧；没有再上报（知道不会有结果）；接下来的周一提交了辞职通知。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>证言从‘读专利’升级到‘数据备份至中国华为’，直接服务开场“pulled the strings from China / outpost”图景，也触及数据跨境与潜在商业秘密外流的想象。她解释不再上报是因为预期无效，并于次周辞职——把担忧表达为足以让她离开的程度，增强真诚感。</p>
-    <h4>背景知识</h4>
-    <p>跨国企业内部备份、代码仓库镜像、全球协同研发在科技业并不罕见；关键争点永远是：备份内容是否包含他人商业秘密/受控技术、是否违反合同或刑法、以及决策层是否知情并鼓励以不当方式获取。‘backed up to Huawei in China’是强叙事句，其法律重量取决于后续文件与鉴识证据。</p>
-    <p>数据跨境备份还可能触发出口管制与隐私/商业秘密合同交叠问题，但刑事陪审团首先听到的是地缘直觉：美国子公司的数据流向中国母公司。控方乐见这种直觉；辩方必须用架构图、权限日志与备份策略证明这是全球研发常态。</p>
-    <h4>为何这么说</h4>
-    <p>‘知道上报无用’把第5节拍的沉默管理层变成结构性问题；辞职则给陪审团一个普通人的道德锚点：她用脚投票。对辩方而言，必须尽快把“全球备份=犯罪”的等式拆开。</p>
-  </div>
-</details>
-</article>
-
-      <div class="phase-divider"><span>十、Ryan Poscablo 交叉与 Rule 404 边审</span></div>
-
-<article class="beat" id="beat-d2-07">
-  <div class="beat-header">
-    <span class="beat-num">9/10 · 节拍 07</span>
-    <span class="beat-speaker">辩方 Ryan Poscablo（Steptoe）交叉 / 法官</span>
-    <span class="beat-phase">开场寒暄被打断</span>
-  </div>
-  <p class="quote-en">Cross by Ryan Poscablo (Steptoe): Queens-born Brooklyn intro — Judge: Enough, speak slowly. Futurewei paid better than Sun Microsystems?</p>
-  <p class="quote-zh">Steptoe 律师 Ryan Poscablo 开始交叉：以自己 Queens 出生、Brooklyn 相关自我介绍拉近距离——法官：够了，说慢一点。律师问：Futurewei 的薪酬是否比升阳（Sun Microsystems）更好？</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>辩方换将：Poscablo 试图用本地身份寒暄软化气氛，被 Donnelly 法官立刻打断并要求语速放慢——显示法官对时间与纪律的掌控。实质第一问转向薪酬比较（Futurewei vs Sun），为“公司对她不薄”或动机叙事做铺垫。</p>
-    <h4>背景知识</h4>
-    <p>交叉询问开场的 rapport-building 常见，但法官可限制无关冗词。薪酬问题可走两条路：温和展示 Futurewei 是正常优厚雇主；或暗示离职另有原因。Sun Microsystems 作为过往雇主参照，便于理解职业轨迹。</p>
-    <h4>为何这么说</h4>
-    <p>在控方刚完成“文化腐败→辞职”的弧光后，辩方用钱的问题把故事拉回劳动力市场理性选择，削弱道德圣徒色彩。</p>
-  </div>
-</details>
-</article>
-
-<article class="beat" id="beat-d2-08">
-  <div class="beat-header">
-    <span class="beat-num">9/10 · 节拍 08</span>
-    <span class="beat-speaker">辩方交叉 / Schnider / 控方反对 / 法官</span>
-    <span class="beat-phase">Tech Women 善行 · 相关性裁断</span>
-  </div>
-  <p class="quote-en">Yes. Nominated for State Dept Tech Woman Initiative? Yes. Mentored women from N. Africa/ME — Objection; Judge: no relevance</p>
-  <p class="quote-zh">证人：是的（薪酬更好）。是否获提名为国务院 Tech Woman 相关倡议？——是的。是否指导过北非/中东女性——控方反对；法官：无相关性（no relevance）。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>辩方试图引入证人的先前善行/职业荣誉（国务院科技女性倡议提名、指导北非与中东女性），以塑造正面品格。控方反对，法官以无相关性切断指导经历的展开。薪酬问题已答完；善行证据未能完整着陆。</p>
-    <h4>背景知识</h4>
-    <p>这正是随后边审将讨论的 Rule 404 脉络：检方担忧辩方用 prior good acts 不当粉饰；法官稍后以“银行抢劫案不能问被告哪些时候没抢银行”作类比。品格证据在刑事案中受到严格限制。</p>
-    <h4>为何这么说</h4>
-    <p>辩方想用荣誉履历对冲她作为控方文化污点证人的锋芒；法官“no relevance”表明法庭不想让证言滑向人道主义履历秀。</p>
-  </div>
-</details>
-</article>
-
-<article class="beat" id="beat-d2-09">
-  <div class="beat-header">
-    <span class="beat-num">9/10 · 节拍 09</span>
-    <span class="beat-speaker">辩方交叉 / Schnider / 法官</span>
-    <span class="beat-phase">出口管制表格 · 午间时间压力</span>
-  </div>
-  <p class="quote-en">Signed export control form that got approved? Don't remember. Know nothing about export controls? Only when worked on them. Judge near lunch — can you finish? No</p>
-  <p class="quote-zh">是否签过后来获批的出口管制表格？——不记得。是否对出口管制一无所知？——只在经手相关工作时才了解。法官近午餐时间问：你能问完吗？——不能。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>辩方转向合规文件：若存在获批的出口管制表格，或可暗示并非无视出口法规。证人记忆含糊；对出口管制知识收窄为“只在做相关工作时”。法官催促午餐前结束，律师承认无法完成——为把陪审团请出、进行法律辩论制造时间点。</p>
-    <h4>背景知识</h4>
-    <p>出口管制与本案 IEEPA/制裁、技术转移叙事相邻，但具体表格是否涉及本案技术争点，正是随后边审的核心。证人“不记得”降低了辩方用该表格快速得分的能力。</p>
-    <h4>为何这么说</h4>
-    <p>在陪审团听完“数据备份到中国”之后，辩方急需任何“合规存在”的柜台证据；法官的时间压力则把斗争从事实问答推向证据法裁定。</p>
-  </div>
-</details>
-</article>
-
-<article class="beat" id="beat-d2-10">
-  <div class="beat-header">
-    <span class="beat-num">9/10 · 节拍 10</span>
-    <span class="beat-speaker">陪审团退出后 · 控方 / 法官</span>
-    <span class="beat-phase">反对先前善行证据</span>
-  </div>
-  <p class="quote-en">Jury out. AUSA: concerned defense bringing prior good acts. Judge: approved export control not for tech at issue? AUSA: not. Also internship. Judge: not relevant</p>
-  <p class="quote-zh">陪审团退出。控方：担心辩方引入先前善行。法官：（那份）获批的出口管制是不是针对本案争点技术？控方：不是。还有实习相关——法官：无相关性。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>边审明确争议名称：prior good acts。法官追问出口管制批准是否针对本案技术；控方否定。实习经历同样被裁为不相关。这等于预告：辩方不能靠“做过合规的事”来抵消控方正在证明的不当专利/数据实践。</p>
-    <h4>背景知识</h4>
-    <p>FRE 404 原则上禁止用品格或其它行为证明“此次也/不会如此行事”；展示 prior good acts 同样受限制。法官用是否“for tech at issue”作过滤：与争点技术无关的合规审批，证明力弱而误导风险高。</p>
-    <h4>为何这么说</h4>
-    <p>控方在此保护叙事纯度：不想让陪审团因国务院项目、获批表格、实习而产生光晕效应。辩方则认为这些材料关乎偏见与完整图景——两边的价值权衡正是 403/404 的日常。</p>
-  </div>
-</details>
-</article>
-
-<article class="beat" id="beat-d2-11">
-  <div class="beat-header">
-    <span class="beat-num">9/10 · 节拍 11</span>
-    <span class="beat-speaker">法官类比 / 控辩关于文件与境外取证</span>
-    <span class="beat-phase">404 逻辑 · 午餐</span>
-  </div>
-  <p class="quote-en">Judge analogy: bank robbery trial — can't ask about times defendant DIDN'T rob bank. AUSA: didn't give documents / overseas deposition. Defense: that was your document. Lunch</p>
-  <p class="quote-zh">法官类比：银行抢劫案审判中——不能问被告哪些时候没有抢银行。控方：（辩方）没给文件 / 涉及海外作证安排。辩方：那是你们的文件。随后午餐休庭。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>Donnelly 的银行抢劫类比，把抽象的 404/good acts 规则翻译成常识：没有犯罪的日子不能用来证明这次没犯罪。控辩随即陷入文件开示扯皮——海外 deposition、谁持有文件——显示 Day 2 已进入硬证据程序战。</p>
-    <p>该裁定对后三个月具有规则示范意义：每当辩方想出示“我们也付钱买许可/也做过合规培训/也开除过犯规员工”时，控方都可能援引同一逻辑要求限定用途或直接排除。补救措施与许可费仍可能在具体争点上作为非品格用途进入，但 Day 2 已表明法官会仔细盯“用途标签”。</p>
-    <h4>背景知识</h4>
-    <p>该类比是美国法官常用的教学式裁定理由。文件争议提醒读者：公开推文笔记无法还原完整开示记录；本页只记录双方当庭互指，不作谁对谁错的裁判。</p>
-    <h4>为何这么说</h4>
-    <p>类比一旦说出，后续辩方再想用“合规表格/提名荣誉”翻盘会更难。午餐打断使上午停在法律胜利偏控方的节点：文化指控已进入记录，善行柜台大多被挡在门外。</p>
-  </div>
-</details>
-</article>
-
-      <div class="phase-divider"><span>十一、下午续询 Schnider · 陪审员事务</span></div>
-
-<article class="beat" id="beat-d2-12">
-  <div class="beat-header">
-    <span class="beat-num">9/10 · 节拍 12</span>
-    <span class="beat-speaker">法官 / 陪审事务 · 辩方继续交叉 Schnider</span>
-    <span class="beat-phase">陪审员薪酬 · 中国总部决策</span>
-  </div>
-  <p class="quote-en">Afternoon: Juror 12 employer only pays 2 weeks — court will contact. Defense to Schnider: HQ in China made decisions? Yes</p>
-  <p class="quote-zh">下午：陪审员12号的雇主只支付两周薪酬——法院将联系沟通。辩方问 Schnider：是否由中国总部做决策？——是。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>先出现长审的人性细节：Juror 12 的雇主只付两周工资，法院介入——提醒本案预计约三个月，陪审团经济压力真实存在。随即交叉回到实质：证人确认中国总部做决策；辩方下一问立刻将其平凡化。</p>
-    <h4>背景知识</h4>
-    <p>联邦法院对因经济困难可能影响服务的陪审员，通常会了解雇主政策、必要时解释法律义务或考虑替换。公开笔记未说结局，仅显示法院将联系。</p>
-    <h4>为何这么说</h4>
-    <p>辩方先拿到“Yes”（总部决策），是为了马上说“这不就是普通老板做决定吗”——把控方的阴谋语言翻译成公司科层语言。</p>
-  </div>
-</details>
-</article>
-
-<article class="beat" id="beat-d2-13">
-  <div class="beat-header">
-    <span class="beat-num">9/10 · 节拍 13</span>
-    <span class="beat-speaker">辩方 / Schnider / 法官</span>
-    <span class="beat-phase">“每个人都有老板”被叫停</span>
-  </div>
-  <p class="quote-en">Isn't that typical — boss decides? Yes. Everyone in courtroom has a boss except her Honor — Judge: confine to matter at issue</p>
-  <p class="quote-zh">那这不就是典型情况——老板做决定？——是。法庭里除了法官阁下，每个人都有老板——法官：请限制在本案争点范围内。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>辩方完成关键降维：中国总部决策＝普世的老板决策；还加了一句半开玩笑的“除了法官谁都有老板”，试图解除“中国控制”的毒素。Donnelly 立即要求回到争点，显示其对跑题的低耐心。</p>
-    <h4>背景知识</h4>
-    <p>组织科层抗辩在母子公司案件中极常见：有汇报线不等于有犯罪共谋。但若证据显示的是“对窃取专利信息感到自豪且上报无果”，则“有老板”本身不能自动洗白。</p>
-    <h4>为何这么说</h4>
-    <p>这一问是辩方 Day 2 对 Futurewei 线最清晰的理论句：把 outpost 叙事说成普通 MNC 治理。能否成立，仍要看数据备份与专利实践的具体证据。</p>
-  </div>
-</details>
-</article>
-
-      <div class="phase-divider"><span>十二、富士通展会线：Teresa / Timothy Harmon</span></div>
-
-<article class="beat" id="beat-d2-14">
-  <div class="beat-header">
-    <span class="beat-num">9/10 · 节拍 14</span>
-    <span class="beat-speaker">控方传唤 / 证人 Teresa Harmon</span>
-    <span class="beat-phase">富士通展会线开场</span>
-  </div>
-  <p class="quote-en">Next: Teresa Harmon, Harmon Exhibits, Weatherford TX; trade show exhibits; ~25/year; for Fujitsu</p>
-  <p class="quote-zh">下一位：Teresa Harmon，Harmon Exhibits，德克萨斯州 Weatherford；从事贸易展展台工作；每年约25场；客户包括富士通（Fujitsu）。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>IP 故事从 Futurewei 内部文化切到开场提及的富士通展会拍照事件。Teresa Harmon 以展台服务商身份出现，建立专业基础：高频跑展、服务富士通，因而认得“自己人”与异常举动。</p>
-    <h4>背景知识</h4>
-    <p>开场中辩方曾称富士通事件是一名员工的 foolish act 并被迅速解雇；控方则把它当作模式中的一环。展会证人的价值在于“当场抓获”的剧场感，类似 Tappy 视频承诺。</p>
-    <h4>为何这么说</h4>
-    <p>在 Schnider 提供“系统性文化”之后，Harmon 提供“外部目击”：两条支线共同服务 pattern，又来自不同证据类型。</p>
-  </div>
-</details>
-</article>
-
-<article class="beat" id="beat-d2-15">
-  <div class="beat-header">
-    <span class="beat-num">9/10 · 节拍 15</span>
-    <span class="beat-speaker">直接询问 / Teresa Harmon</span>
-    <span class="beat-phase">芝加哥展 · 安保升级</span>
-  </div>
-  <p class="quote-en">Chicago show: photography only professional; hired off-duty police (not normal) to protect exhibits; closed show, saw someone</p>
-  <p class="quote-zh">芝加哥展会：摄影仅限专业人员；雇佣了不当班警察保护展品（这并非常规做法）；在闭馆/非开放时段的展会现场，看到有人。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>证人强调非常规安保（off-duty police）与摄影限制，暗示富士通展品被视为敏感、值得额外保护。‘closed show’语境下仍出现人员，增加可疑性。</p>
-    <h4>背景知识</h4>
-    <p>科技展会常有未发布产品或半开放演示；厂商雇私人安保并不罕见，但证人说“not normal”是在抬高该展的敏感等级。</p>
-    <h4>为何这么说</h4>
-    <p>控方需要陪审团先接受“这里不该随便拍照”，才会把“亚洲男子持相机”听成盗窃企图而非观光。</p>
-  </div>
-</details>
-</article>
-
-<article class="beat" id="beat-d2-16">
-  <div class="beat-header">
-    <span class="beat-num">9/10 · 节拍 16</span>
-    <span class="beat-speaker">直接询问 / Teresa Harmon</span>
-    <span class="beat-phase">持相机男子被安保带走</span>
-  </div>
-  <p class="quote-en">Man with camera; wouldn't say if Fujitsu; security took him; Asian in suit/tie; not Fujitsu guys they know</p>
-  <p class="quote-zh">一名持相机的男子；不愿说明是否富士通人员；安保将其带走；亚洲人，西装领带；不是他们认识的那些富士通的人。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>描述聚焦可观察事实：相机、不愿表明身份、被带走、族裔与着装、非熟识富士通员工。‘Asian in suit/tie’作为辨认特征出现在笔记中；分析时需警惕刻板印象风险，同时如实转述证言。</p>
-    <h4>背景知识</h4>
-    <p>身份拒绝说明 + 非已知员工，是展会盗窃叙事的标准元件。与开场“foolish act… promptly fired”并不必然矛盾——辩方仍可说最终处理了个人；控方则说刺探真实发生。</p>
-    <h4>为何这么说</h4>
-    <p>此节拍把抽象“富士通照片传回中国”落实为可可视化的展厅冲突，供陪审团记忆。</p>
-  </div>
-</details>
-</article>
-
-<article class="beat" id="beat-d2-17">
-  <div class="beat-header">
-    <span class="beat-num">9/10 · 节拍 17</span>
-    <span class="beat-speaker">交叉询问 / Teresa Harmon</span>
-    <span class="beat-phase">事后接触与记忆刷新</span>
-  </div>
-  <p class="quote-en">Cross: contacted later wanted to help; only person there; prosecutors showed photos to refresh</p>
-  <p class="quote-zh">交叉：后来有人联系她、她想提供帮助；当时（现场相关）只有她；检方曾出示照片以刷新记忆。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>辩方开始攻击记忆形成过程：主动想帮忙（动机）、自称唯一在场（不可复核）、以及检方用照片 refresh recollection（可能污染记忆）。这是对目击证人的标准方法论打击。</p>
-    <h4>背景知识</h4>
-    <p>FRE 允许用书面材料/照片刷新记忆，但对方可探究暗示性。‘wanted to help’可被说成热心，也可被说成入戏太深。</p>
-    <h4>为何这么说</h4>
-    <p>在戏剧性直接询问之后，辩方必须立即降低“侦探故事”的确定性，为 Timothy 的证言预留合理怀疑空间。</p>
-  </div>
-</details>
-</article>
-
-<article class="beat" id="beat-d2-18">
-  <div class="beat-header">
-    <span class="beat-num">9/10 · 节拍 18</span>
-    <span class="beat-speaker">交叉询问 / Teresa Harmon</span>
-    <span class="beat-phase">细节与回忆时机</span>
-  </div>
-  <p class="quote-en">People can't touch; security only for Fujitsu; man no company badge; notebook — no one asked me (when remembered)</p>
-  <p class="quote-zh">人们不能触碰（展品）；安保只为富士通而设；该男子没有公司徽章；笔记本——（关于某细节）当时没人问我（直到后来才想起/被问及）。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>交叉继续挖：触碰限制、安保专属性、无徽章、笔记本，以及回忆出现的时机（“没人问我”）。后者尤其重要——暗示关键细节可能是事后建构而非当场锚定。</p>
-    <h4>背景知识</h4>
-    <p>目击证言的可靠性研究长期警示：压力事件、事后信息、重复询问会改变记忆。辩方不一定需要证明她说谎，只需证明她可能真诚但出错。</p>
-    <h4>为何这么说</h4>
-    <p>‘no company badge’服务控方可疑性；‘no one asked me’服务辩方记忆弹劾——同一套细节被两边拉扯。</p>
-  </div>
-</details>
-</article>
-
-<article class="beat" id="beat-d2-19">
-  <div class="beat-header">
-    <span class="beat-num">9/10 · 节拍 19</span>
-    <span class="beat-speaker">证人 Timothy Harmon</span>
-    <span class="beat-phase">展会目击呼应</span>
-  </div>
-  <p class="quote-en">Timothy Harmon: hired ex-police; saw Asian with camera; nervous demeanor</p>
-  <p class="quote-zh">Timothy Harmon：雇过前警员；看见持相机的亚洲男子；神态紧张。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>笔记转入 Timothy Harmon：与 Teresa 的展会安保叙述相呼应（雇佣前警察、持相机的亚洲男子），并加入“nervous demeanor”的主观观察。两名 Harmon 形成亲历链条，增强现场感，但也提高相互强化叙事被质疑的风险。</p>
-    <h4>背景知识</h4>
-    <p>神态（demeanor）观察证明力有限，却对陪审团很有感染力。安保决策者与目击者之重叠，使辩方稍后关于“职业敏感过度”的攻击更有靶子。</p>
-    <h4>为何这么说</h4>
-    <p>控方用第二位证人锁定同一场景，防止 Teresa 被交叉打成孤证；辩方则可能说这是同一展会团队的回音室。</p>
-  </div>
-</details>
-</article>
-
-<article class="beat" id="beat-d2-20">
-  <div class="beat-header">
-    <span class="beat-num">9/10 · 节拍 20</span>
-    <span class="beat-speaker">笔记中的富士通公司情报总监叙述（与 Timothy 链条衔接） / 交叉</span>
-    <span class="beat-phase">护照·存储卡·间谍博物馆 · 最小化</span>
-  </div>
-  <p class="quote-en">After hours no one allowed; at dinner, Teresa called, rushed over. Saw detainees' passports newly issued in China; notebook and camera with equipment photos some Fujitsu some not; memory card to GC in Texas. Cross: didn't see them taking pictures; people can see marketed products at shows; he looks at others from distance. Army or CIA — overruled objection; Spy Museum board — yes; no formal inventory — note to self.</p>
-  <p class="quote-zh">非开放时段不许进入；晚餐时 Teresa 来电，他赶赴现场。见到被扣留者护照为新近在中国签发；笔记本与相机内有设备照片，有些是富士通、有些不是；存储卡交给德州的法务/通用顾问（GC）。交叉：他并未亲眼看见对方正在拍照；展会上人们本就可以观看营销产品；他看别人展品也是保持距离。有人问及陆军或中情局背景——反对被驳回；是否任间谍博物馆（Spy Museum）董事会成员——是；没有正式物品清单——（自记）存疑点。</p>
-  <details class="analysis-details">
-  <summary>展开解读 · 信息 / 背景 / 为何这么说</summary>
-  <div class="analysis-block">
-    <h4>信息解读</h4>
-    <p>笔记将展会夜查、中国新签发护照、照片存储卡移交德州 GC 等细节，与富士通“公司情报总监”（Director of company intelligence）叙述前后衔接；是否与 Timothy Harmon 为同一人，公开推文表述存在粘合，本页不作未经核验的身份合并断言，只按笔记链条呈现。交叉策略清晰：无直接目击拍照动作；展会本属公开营销；并以间谍博物馆董事会等背景暗示证人可能职业性过敏。‘no formal inventory’则攻击证据保管完整性。</p>
-    <h4>背景知识</h4>
-    <p>护照“新近在中国签发”在控方叙事中可被用作来源暗示，但护照本身不等于犯罪。存储卡移交 GC 是企业保全证据的常见做法。Spy Museum 董事会身份是双刃剑：可示专业，也可被说成“以间谍视角看展会”。Army/CIA 问题的反对被 overruled，说明法官允许有限探究偏见/背景。</p>
-    <h4>为何这么说</h4>
-    <p>这是开场“富士通员工 foolish photos”与控方“模式化刺探”的对决现场版。辩方最小化（public marketing + 未目击按下快门 + 无正式清单）并不否认有人被拦，而是降低其刑法意义；控方则靠护照、相机内容与非常规时段闯入感维持严重性。Day 2 结束时，IP 线已从 Futurewei 文化走到展会抓拍，RICO pattern 的“拼图感”增强，同时 404 裁定显示法庭会卡住纯粉饰证据。</p>
-    <p>把存储卡交给德州 GC，是在向陪审团展示企业受害者视角的证据保全，而不是事后媒体故事。交叉则把同一叙事改写为：职业情报人员（Spy Museum）可能过度解读公开展会。两种读法可以并存于同一组事实——这正是陪审团日后要做的选择。</p>
-  </div>
-</details>
-</article>
-
-
-      <div class="note-box" style="margin-top:2rem">
-        <span class="label-sc">第二日程序要点速览</span>
-        <p style="margin:0">① Beheshti：违法在伊工作/签字、安全许可表格、目的手段之问；“政府从未起诉你”被 sustained。<br/>
-        ② Schnider：中国工程师研读并使用专利信息且自豪、上报 Andy Chen 无果、数据备份至中国、辞职；辩方打薪酬、Tech Women、出口管制表格；法官以 404/银行抢劫类比挡 prior good acts。<br/>
-        ③ Harmon 展会链：非常规警力、持相机男子、护照与存储卡、交叉最小化与 Spy Museum 背景。<br/>
-        ④ Juror 12 雇主仅付两周薪——长审的后勤现实。</p>
-      </div>
-
     </section>
 
     <!-- 5 COMPARE -->
@@ -1605,6 +542,6 @@
   U.S. v. Huawei · 1:18-cr-00457 · EDNY Brooklyn · 9月9–10日开庭与证言解读
 </footer>
 
-<script src="app.js?v=court1"></script>
+<script src="app.js?v=split1"></script>
 </body>
 </html>
