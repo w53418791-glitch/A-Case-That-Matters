@@ -50,7 +50,7 @@
       <li><a href="#sec-calendar">法院排期</a></li>
       <li><a href="#sec-cards">开庭以来媒体卡</a></li>
       <li><a href="#sec-watch">待补观察清单</a></li>
-      <li><a href="#sec-disclaimer">来源与免责</a></li>
+      <li><a href="#sec-sources">来源链接</a></li>
     </ol>
   </nav>
 
@@ -59,7 +59,7 @@
     <section id="sec-intro">
       <span class="label-sc">Media Desk · Court Calendar</span>
       <h1 class="page-title">媒体报道与法院排期</h1>
-      <p class="lead">汇总开庭以来公开报道的要点与独特角度，并对照 EDNY 官方日历列出已核实的开庭日。媒体评论不等于庭审记录；官方日历条目不等于完整庭审记录。本页<strong>不构成法律意见</strong>。</p>
+      <p class="lead">汇总开庭以来公开报道的要点与独特角度，并对照 EDNY 官方日历列出已核实的开庭日。悬停日历行可查看被告列名细节。</p>
     </section>
 
     <section id="sec-calendar">
@@ -96,15 +96,28 @@
               <td><span class="tag tag-media">媒体报道</span></td>
               <td>陪审团挑选开始（Reuters Freifeld 等）。<strong>本页未将当日选陪审单独标为已核对的官方日历行</strong>——以媒体报道为准；官方条目请自行在 Donnelly 当日日历复核。</td>
             </tr>
-            <tr>
+            <tr class="cal-hover" tabindex="0">
               <td>2026-09-09（周三）</td>
               <td><span class="tag tag-official">官方日历</span></td>
-              <td>Judge DONNELLY — Criminal Cause on Trial — <strong>18cr00457</strong> USA v. HUAWEI — <strong>09:30 AM</strong> — <strong>Courtroom 6D S</strong>。被告列名含 Huawei Technologies、Huawei Device USA、Skycom Tech、Huawei Device Co.、Futurewei 等。</td>
+              <td>
+                <div class="cal-summary">Trial · 09:30 · <strong>Courtroom 6D S</strong> · USA v. HUAWEI</div>
+                <div class="cal-tip" role="tooltip">
+                  <p>Judge DONNELLY — Criminal Cause on Trial — <strong>18cr00457</strong>.</p>
+                  <p>被告列名（日历）：Huawei Technologies、Huawei Device USA、Skycom Tech、Huawei Device Co.、Futurewei 等。</p>
+                  <p class="tip-src">来源：EDNY 当日日历 PDF</p>
+                </div>
+              </td>
             </tr>
-            <tr>
+            <tr class="cal-hover" tabindex="0">
               <td>2026-09-10（周四）</td>
               <td><span class="tag tag-official">官方日历</span></td>
-              <td>同案继续审判 — 09:30 — <strong>Courtroom 6D S</strong>（日历列 Huawei 母公司、Device USA、Device Co.、Futurewei 等）。</td>
+              <td>
+                <div class="cal-summary">继续审判 · 09:30 · <strong>Courtroom 6D S</strong></div>
+                <div class="cal-tip" role="tooltip">
+                  <p>同案继续 — 日历列 Huawei 母公司、Device USA、Device Co.、Futurewei 等。</p>
+                  <p class="tip-src">来源：EDNY 当日日历 PDF</p>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>2026-09-11（周五）</td>
@@ -121,15 +134,27 @@
               <td><span class="tag tag-pending">待核实</span></td>
               <td>通常无民事/刑事常规开庭；本页未对这两日做官方 PDF 核对结论。</td>
             </tr>
-            <tr>
+            <tr class="cal-hover" tabindex="0">
               <td>2026-09-15（周二）</td>
               <td><span class="tag tag-official">官方日历</span></td>
-              <td>18cr00457 on trial — 09:30 — <strong>Courtroom 4G N</strong>（Skycom 再次出现在 defs 列表中）。</td>
+              <td>
+                <div class="cal-summary">Trial · 09:30 · <strong>Courtroom 4G N</strong></div>
+                <div class="cal-tip" role="tooltip">
+                  <p>18cr00457 on trial；Skycom 再次出现在 defs 列表（程序地位以案卷为准）。</p>
+                  <p class="tip-src">来源：EDNY 当日日历 PDF</p>
+                </div>
+              </td>
             </tr>
-            <tr>
+            <tr class="cal-hover" tabindex="0">
               <td>2026-09-16（周三）</td>
               <td><span class="tag tag-official">官方日历</span></td>
-              <td>18cr00457 on trial — 09:30 — <strong>Courtroom 4G N</strong>。</td>
+              <td>
+                <div class="cal-summary">Trial · 09:30 · <strong>Courtroom 4G N</strong></div>
+                <div class="cal-tip" role="tooltip">
+                  <p>18cr00457 on trial — Courtroom 4G N。</p>
+                  <p class="tip-src">来源：EDNY 当日日历 PDF</p>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>2026-09-17 起 · 后续周</td>
@@ -348,28 +373,22 @@
       </div>
     </section>
 
-    <section id="sec-disclaimer">
-      <span class="label-sc">Sources & Disclaimer</span>
-      <h2 class="section-h">来源与免责</h2>
-      <ul class="sources-list">
-        <li>官方日历：<a href="https://www.nyed.uscourts.gov/court-calendars" target="_blank" rel="noopener">EDNY Court Calendars</a>；日文件目录 <a href="https://www.nyed.uscourts.gov/cal/" target="_blank" rel="noopener">/cal/</a>。</li>
-        <li>Donnelly individual practices（公开 PDF）：Courtroom 4G、Cadman Plaza 地址与 chambers 邮箱等。</li>
-        <li>媒体链接见各卡片；转载关系以各页署名/来源线为准，如有更新以原文为准。</li>
-      </ul>
-      <div class="disclaimer">
-        <p>1. 本页为静态公开信息整理，<strong>不构成法律意见</strong>，不作判决或结案日预测。</p>
-        <p>2. Inner City Press 笔记<strong>不是</strong>官方庭审逐字稿；官方日历<strong>不是</strong>完整庭审记录。</p>
-        <p>3. <strong>不编造引语</strong>，不虚构未在官方日历确认的开庭日；不确定处标「待核实」。</p>
-        <p>4. 刑事被告享有无罪推定；案件审理中。</p>
-        <p>5. 返回庭审深度解读：<a href="index.html">index.html</a>。</p>
-      </div>
+    <section id="sec-sources">
+      <span class="label-sc">Sources</span>
+      <h2 class="section-h">来源链接</h2>
+      <p class="sources-quiet">
+        <a href="https://www.nyed.uscourts.gov/court-calendars" target="_blank" rel="noopener">EDNY Court Calendars</a> ·
+        <a href="https://www.nyed.uscourts.gov/cal/" target="_blank" rel="noopener">/cal/ 日目录</a> ·
+        媒体链接见各报道卡片 ·
+        <a href="index.html">返回庭审解读</a>
+      </p>
     </section>
 
   </main>
 </div>
 
 <footer class="site-foot">
-  U.S. v. Huawei · 1:18-cr-00457 · 媒体报道与法院排期 · 官方日历已核对 9/9–10、9/11、9/15–16 · 非官方 · 非法律意见
+  U.S. v. Huawei · 1:18-cr-00457 · 媒体报道与法院排期 · 官方日历已核对 9/9–10、9/11、9/15–16
 </footer>
 
 <script src="app.js"></script>
