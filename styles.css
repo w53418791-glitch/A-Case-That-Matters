@@ -315,6 +315,7 @@ li { margin-bottom: 0.4rem; }
 .cast-hint-inline { margin-top: 0.75rem; }
 
 .people-groups {
+  overflow: visible;
   display: flex;
   flex-direction: column;
   gap: 1.35rem;
@@ -384,6 +385,8 @@ li { margin-bottom: 0.4rem; }
 }
 
 .person-tip {
+  /* Progressive disclosure: hidden unless hover/focus/open — use display, not only opacity */
+  display: none;
   position: absolute;
   left: 0;
   top: calc(100% + 6px);
@@ -395,11 +398,7 @@ li { margin-bottom: 0.4rem; }
   padding: 0.75rem 0.9rem;
   font-size: 0.82rem;
   line-height: 1.55;
-  opacity: 0;
-  visibility: hidden;
   pointer-events: none;
-  transform: translateY(4px);
-  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
   z-index: 80;
   box-shadow: 0 8px 24px rgba(0,0,0,0.28);
 }
@@ -416,10 +415,8 @@ li { margin-bottom: 0.4rem; }
 .person:hover .person-tip,
 .person:focus-within .person-tip,
 .person.is-open .person-tip {
-  opacity: 1;
-  visibility: visible;
+  display: block;
   pointer-events: auto;
-  transform: translateY(0);
 }
 
 /* Keep tip on-screen when near right edge */
@@ -485,20 +482,18 @@ li { margin-bottom: 0.4rem; }
     width: auto;
     max-width: 100%;
     margin-top: 0.45rem;
-    transform: none;
   }
   .person:not(.is-open) .person-tip {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
+    display: none !important;
   }
   .person.is-open .person-tip {
-    display: block;
-    opacity: 1;
-    visibility: visible;
+    display: block !important;
     pointer-events: auto;
   }
 }
+
+/* Never leave tip text in the document flow when closed */
+.people-groups .person-tip[hidden] { display: none !important; }
 
 /* Transcript beats — THE CORE */
 .beat {
@@ -1134,4 +1129,11 @@ details.reprint-pool ul { margin: 0.35rem 0 0; font-size: 0.9rem; }
 @media (max-width: 700px) {
   .fact-vs-frame, .media-grid-2 { grid-template-columns: 1fr; }
   .layer-row { grid-template-columns: 1fr; gap: 0.25rem; }
+}
+
+
+/* People tips must not be clipped by main */
+.main { overflow-x: clip; }
+#sec-cast, .people-groups, .people-group, .people-row, .person {
+  overflow: visible;
 }
