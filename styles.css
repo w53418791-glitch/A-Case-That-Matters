@@ -303,49 +303,201 @@ li { margin-bottom: 0.4rem; }
   margin-top: 0.15rem;
 }
 
-/* Cast cards */
-.cast-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1rem;
-  margin: 1.25rem 0 2rem;
+/* People progressive disclosure (hover / focus) */
+.cast-hint,
+.cast-hint-inline {
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  margin: 0.35rem 0 1.1rem;
+  max-width: 44rem;
+}
+.cast-hint-inline { margin-top: 0.75rem; }
+
+.people-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+  margin: 0.5rem 0 2rem;
   max-width: 52rem;
 }
 
-.cast-card {
+.people-group-title {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin: 0 0 0.55rem;
+  font-weight: 600;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.people-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.person {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.12rem;
   background: var(--cream);
   border: 1px solid var(--rule);
-  border-top: 3px solid var(--navy);
-  padding: 1rem 1.05rem;
-  box-shadow: 0 1px 3px var(--shadow);
+  border-left: 3px solid var(--navy);
+  padding: 0.55rem 0.8rem 0.5rem;
+  min-width: 11.5rem;
+  max-width: 17.5rem;
+  cursor: default;
+  box-shadow: 0 1px 2px var(--shadow);
+  transition: border-color 0.15s, box-shadow 0.15s, background 0.15s;
+  outline: none;
+}
+.person.defense { border-left-color: var(--gold-dim); }
+.person.court { border-left-color: var(--walnut); }
+.person.witness { border-left-color: #6b5344; }
+
+.person:hover,
+.person:focus-within,
+.person.is-open {
+  border-color: var(--gold-dim);
+  box-shadow: 0 2px 10px var(--shadow);
+  background: #fffdf7;
+  z-index: 30;
 }
 
-.cast-card.defense { border-top-color: var(--gold-dim); }
-.cast-card.court { border-top-color: var(--walnut); }
-.cast-card.witness { border-top-color: #6b5344; }
-
-.cast-card .role {
-  font-family: var(--sans);
-  font-size: 0.65rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--navy-light);
-  margin-bottom: 0.25rem;
-}
-
-.cast-card .name {
+.person-name {
   font-family: var(--serif);
   font-weight: 700;
-  font-size: 1.02rem;
+  font-size: 0.95rem;
   color: var(--walnut-deep);
-  margin-bottom: 0.35rem;
+  line-height: 1.3;
+}
+.person-role {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  line-height: 1.35;
 }
 
-.cast-card .desc {
-  font-size: 0.88rem;
-  color: var(--ink-soft);
+.person-tip {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 6px);
+  width: min(22rem, 78vw);
+  background: var(--walnut-deep);
+  color: var(--parchment);
+  border: 1px solid var(--gold-dim);
+  border-radius: 4px;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.82rem;
   line-height: 1.55;
-  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(4px);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
+  z-index: 80;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.28);
+}
+.person-tip p { margin: 0 0 0.45rem; }
+.person-tip p:last-child { margin-bottom: 0; }
+.person-tip .tip-src {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  color: var(--gold);
+  margin-top: 0.35rem;
+}
+
+.person:hover .person-tip,
+.person:focus-within .person-tip,
+.person.is-open .person-tip {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Keep tip on-screen when near right edge */
+.person:nth-child(n+3) .person-tip {
+  left: auto;
+  right: 0;
+}
+
+.sources-quiet {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  line-height: 1.7;
+  max-width: 44rem;
+}
+.sources-quiet a {
+  color: var(--navy);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.sources-quiet a:hover { color: var(--gold-dim); }
+
+/* Calendar compact + hover detail */
+.cal-table td { position: relative; vertical-align: top; }
+.cal-summary {
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+.cal-tip {
+  display: none;
+  margin-top: 0.45rem;
+  padding: 0.55rem 0.7rem;
+  background: var(--walnut-deep);
+  color: var(--parchment);
+  border-left: 3px solid var(--gold);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  border-radius: 2px;
+}
+.cal-tip p { margin: 0 0 0.35rem; }
+.cal-tip p:last-child { margin-bottom: 0; }
+.cal-tip .tip-src {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  color: var(--gold);
+  margin-top: 0.25rem;
+}
+.cal-hover:hover .cal-tip,
+.cal-hover:focus-within .cal-tip,
+.cal-hover.is-open .cal-tip {
+  display: block;
+}
+.cal-hover { cursor: default; }
+.cal-hover:hover td,
+.cal-hover:focus-within td,
+.cal-hover.is-open td {
+  background: #fffdf7 !important;
+}
+
+@media (hover: none) {
+  .person-tip {
+    position: static;
+    width: auto;
+    max-width: 100%;
+    margin-top: 0.45rem;
+    transform: none;
+  }
+  .person:not(.is-open) .person-tip {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .person.is-open .person-tip {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
 }
 
 /* Transcript beats — THE CORE */
