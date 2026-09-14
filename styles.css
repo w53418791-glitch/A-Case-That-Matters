@@ -1706,3 +1706,155 @@ li { margin-bottom: 0.28rem; }
   .court-info-dl { grid-template-columns: 1fr; }
   .main { padding: 0.9rem 0.95rem 1.75rem; }
 }
+
+/* ===== Compact full-width case banner (v=courtroom3) ===== */
+:root {
+  --toc-w: 220px;
+}
+
+.case-banner {
+  text-align: left;
+  padding: 0.65rem 0;
+  background: linear-gradient(180deg, #1c1712 0%, var(--walnut) 55%, #322820 100%);
+  border-bottom: 3px solid var(--brass);
+}
+
+.banner-inner {
+  max-width: min(1760px, 98vw);
+  margin: 0 auto;
+  padding: 0 1.15rem;
+}
+
+.banner-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+  flex-wrap: wrap;
+}
+
+.banner-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-width: 0;
+  flex: 1 1 28rem;
+}
+
+.case-banner .scales {
+  width: 28px;
+  height: 28px;
+  margin: 0;
+  flex-shrink: 0;
+  opacity: 0.92;
+}
+
+.banner-titles {
+  min-width: 0;
+}
+
+.case-banner .court-name {
+  margin: 0 0 0.12rem;
+  text-align: left;
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+}
+
+.case-banner .caption-title {
+  margin: 0;
+  text-align: left;
+  font-size: clamp(0.95rem, 1.35vw, 1.15rem);
+  line-height: 1.25;
+  letter-spacing: 0.015em;
+  white-space: normal;
+}
+
+.case-banner .caption-title .v {
+  color: var(--gold);
+  font-weight: 600;
+  font-style: italic;
+  margin: 0 0.15em;
+  letter-spacing: 0;
+}
+
+.case-banner .case-no {
+  margin: 0.15rem 0 0;
+  text-align: left;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+}
+
+.case-banner .site-nav {
+  margin-top: 0;
+  justify-content: flex-end;
+  flex: 0 0 auto;
+  gap: 0.28rem 0.4rem;
+}
+
+.case-banner .site-nav a {
+  padding: 0.32rem 0.7rem;
+  font-size: 0.74rem;
+}
+
+.banner-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35rem 1.25rem;
+  margin-top: 0.55rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid rgba(196, 163, 90, 0.28);
+  width: 100%;
+  text-align: left;
+}
+
+.case-banner .parties {
+  margin: 0;
+  max-width: none;
+  flex: 1 1 18rem;
+  text-align: left;
+  font-size: 0.85rem;
+  color: #f0e6d4;
+}
+
+.case-banner .meta-row {
+  margin-top: 0;
+  justify-content: flex-start;
+  gap: 0.3rem 0.9rem;
+  flex: 0 1 auto;
+}
+
+.main p,
+.main ul,
+.main ol,
+.main .lead {
+  max-width: min(62rem, 100%);
+}
+
+@media (max-width: 900px) {
+  .banner-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .banner-brand {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+  .case-banner .site-nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .banner-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 560px) {
+  .case-banner { padding: 0.55rem 0; }
+  .banner-inner { padding: 0 0.85rem; }
+  .banner-brand { gap: 0.55rem; }
+  .case-banner .scales { width: 24px; height: 24px; }
+  .case-banner .caption-title { font-size: 0.92rem; }
+}
