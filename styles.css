@@ -1890,10 +1890,12 @@ li { margin-bottom: 0.28rem; }
 }
 
 .case-banner .caption-title .party-logo.huawei-logo {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  border-radius: 0;
   box-shadow: none;
+  background: transparent;
+  object-fit: contain;
 }
 
 .case-banner .caption-title .v {
@@ -1910,7 +1912,8 @@ li { margin-bottom: 0.28rem; }
     height: 13px;
   }
   .case-banner .caption-title .party-logo.huawei-logo {
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
+    border-radius: 0;
   }
 }
