@@ -1858,3 +1858,59 @@ li { margin-bottom: 0.28rem; }
   .case-banner .scales { width: 24px; height: 24px; }
   .case-banner .caption-title { font-size: 0.92rem; }
 }
+
+/* Caption party logos (courtroom4) */
+.case-banner .caption-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.28rem 0.4rem;
+  row-gap: 0.28rem;
+}
+
+.case-banner .caption-title .party {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.case-banner .caption-title .party-name {
+  line-height: 1.2;
+}
+
+.case-banner .caption-title .party-logo {
+  display: block;
+  flex-shrink: 0;
+  width: 28px;
+  height: 15px;
+  object-fit: contain;
+  border-radius: 1px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18);
+}
+
+.case-banner .caption-title .party-logo.huawei-logo {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+.case-banner .caption-title .v {
+  flex: 0 0 auto;
+  align-self: center;
+}
+
+@media (max-width: 560px) {
+  .case-banner .caption-title {
+    gap: 0.22rem 0.32rem;
+  }
+  .case-banner .caption-title .party-logo {
+    width: 24px;
+    height: 13px;
+  }
+  .case-banner .caption-title .party-logo.huawei-logo {
+    width: 18px;
+    height: 18px;
+  }
+}
