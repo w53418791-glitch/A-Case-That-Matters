@@ -1999,3 +1999,165 @@ li { margin-bottom: 0.28rem; }
   margin-left: 0.15rem;
   margin-right: 0.35rem;
 }
+
+
+/* ===== Twelve counts before the jury (v=courtroom11) ===== */
+.case-banner .meta-row a.meta-chip {
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(196, 163, 90, 0.55);
+  padding-bottom: 1px;
+}
+.case-banner .meta-row a.meta-chip:hover,
+.case-banner .meta-row a.meta-chip:focus {
+  color: #f0e6d4;
+  border-bottom-color: var(--gold);
+}
+.case-banner .meta-row a.meta-chip::before {
+  content: "◆";
+  margin-right: 0.4rem;
+  font-size: 0.55rem;
+  vertical-align: middle;
+  color: var(--gold);
+}
+
+.counts-section {
+  margin: 0 0 1.75rem;
+  padding: 1.15rem 1.1rem 1.25rem;
+  background:
+    linear-gradient(135deg, rgba(26, 39, 68, 0.06), transparent 42%),
+    linear-gradient(225deg, rgba(110, 46, 54, 0.07), transparent 40%),
+    var(--cream);
+  border: 1px solid var(--rule);
+  border-top: 4px solid var(--navy);
+  border-left: 4px solid var(--burgundy);
+  border-radius: 4px;
+  box-shadow: 0 6px 18px rgba(42, 33, 24, 0.08);
+}
+.counts-section .counts-title {
+  margin: 0.15rem 0 0.65rem;
+  color: var(--navy);
+  font-size: clamp(1.2rem, 2.4vw, 1.45rem);
+}
+.counts-caveat {
+  margin: 0 0 0.55rem;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--ink-soft);
+}
+.counts-caveat-sub {
+  font-size: 0.88rem;
+  padding: 0.55rem 0.7rem;
+  background: var(--ink-blue-surface);
+  border-left: 3px solid var(--navy);
+  border-radius: 0 3px 3px 0;
+}
+.counts-list {
+  list-style: none;
+  margin: 1rem 0 0.85rem;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+.counts-list > li {
+  display: grid;
+  grid-template-columns: 2.35rem 1fr;
+  gap: 0.65rem;
+  align-items: start;
+  padding: 0.55rem 0.65rem;
+  background: #fffdf8;
+  border: 1px solid rgba(196, 184, 160, 0.65);
+  border-radius: 3px;
+}
+.counts-list > li:nth-child(even) {
+  background: linear-gradient(90deg, rgba(26, 39, 68, 0.04), #fffdf8 55%);
+}
+.count-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--parchment);
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  box-shadow: inset 0 0 0 1px rgba(196, 163, 90, 0.35);
+}
+.counts-list > li:nth-child(n+11) .count-badge {
+  background: var(--burgundy);
+}
+.count-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.08rem;
+  min-width: 0;
+}
+.count-id {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--burgundy);
+  font-weight: 600;
+}
+.count-en {
+  font-family: var(--serif);
+  font-size: 0.98rem;
+  color: var(--navy);
+  font-weight: 600;
+  line-height: 1.35;
+}
+.count-zh {
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+.counts-withdrawn {
+  margin: 0.75rem 0 0.4rem;
+  padding: 0.55rem 0.75rem;
+  background: rgba(110, 46, 54, 0.06);
+  border: 1px dashed var(--burgundy-soft);
+  border-radius: 3px;
+  font-size: 0.88rem;
+}
+.counts-withdrawn summary {
+  cursor: pointer;
+  font-family: var(--sans);
+  font-weight: 600;
+  color: var(--burgundy);
+  list-style: none;
+}
+.counts-withdrawn summary::-webkit-details-marker { display: none; }
+.counts-withdrawn summary::before {
+  content: "▸ ";
+  color: var(--gold-dim);
+}
+.counts-withdrawn[open] summary::before { content: "▾ "; }
+.counts-withdrawn ul {
+  margin: 0.5rem 0 0.35rem;
+  padding-left: 1.1rem;
+  color: var(--ink-soft);
+}
+.counts-withdrawn li { margin: 0.25rem 0; }
+.counts-src {
+  margin: 0.45rem 0 0;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  font-family: var(--sans);
+  line-height: 1.5;
+}
+.counts-src-main {
+  margin-top: 0.65rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid var(--rule);
+}
+@media (min-width: 900px) {
+  .counts-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.45rem 0.65rem;
+  }
+}
