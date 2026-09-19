@@ -815,6 +815,11 @@ footer.site-foot {
   border-left-color: #2f4a3c;
   background: linear-gradient(135deg, var(--cream) 50%, #eef5ef 100%);
 }
+.dash-card.day7 {
+  border-top-color: var(--burgundy);
+  border-left-color: #6a5530;
+  background: linear-gradient(135deg, var(--cream) 50%, #f6efe8 100%);
+}
 .dash-card h3 {
   font-family: var(--sans);
   font-size: 0.72rem;
@@ -1466,6 +1471,11 @@ details.timeline-fold .fold-hint {
   border-top-color: #a6843a;
   border-left-color: #2f4a3c;
   background: linear-gradient(135deg, #fffdf8 50%, #eef5ef 100%);
+}
+.day-entry-card.day7 {
+  border-top-color: var(--burgundy);
+  border-left-color: #6a5530;
+  background: linear-gradient(135deg, #fffdf8 50%, #f6efe8 100%);
 }
 .day-entry-card h3 {
   margin: 0 0 0.35rem;
