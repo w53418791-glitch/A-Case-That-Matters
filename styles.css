@@ -834,7 +834,14 @@ footer.site-foot {
   padding-left: 1.1rem;
   max-width: none;
 }
+.dash-blurb {
+  margin: 0.35rem 0 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--ink, #2a241c);
+}
 .dash-card li {
+
   font-size: 0.9rem;
   line-height: 1.5;
   margin-bottom: 0.4rem;
