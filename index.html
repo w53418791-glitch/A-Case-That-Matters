@@ -333,7 +333,7 @@
     <section id="sec-cast">
       <span class="label-sc">Dramatis Personae</span>
       <h2 class="section-h">人物志 · Cast of Characters</h2>
-      <p class="cast-hint">紧凑列表：姓名 + 一句话。悬停 / 聚焦展开简介；触控点击切换。事实据公开报道与 FJC / ICLG / Law360 等；不确定处已标明。9/16 Diclemis／Kathale／Mantz 等见 <a href="day-sept16.html#cast-sept16">9月16日</a>；9/17 Bill Weavers／Young／<strong>Anthony Mitchell</strong>／<strong>Jesse Hong</strong>／Sean Chen（MLex／ICP）见 <a href="day-sept17.html#cast-sept17">9月17日</a>；9/18 <strong>王勇</strong>／<strong>王磊</strong>／口译 <strong>Ching Ng</strong>（闭庭三名证人身份仍未公开）见 <a href="day-sept18.html#cast-sept18">9月18日</a>。</p>
+      <p class="cast-hint">法庭／控辩／公司关键人物仍按角色列；<strong>证人按主题分块</strong>（Iran·Mobinet／Skycom、Futurewei、富士通、Tappy、CNEX）。悬停／聚焦展开简介；触控点击切换。事实据公开报道与 FJC／ICLG／Law360 等；不确定处已标明。分日细节见各日页人物卡。</p>
 
       <div class="people-groups">
 
@@ -507,9 +507,13 @@
           </div>
         </div>
 
-        <div class="people-group">
-          <h3 class="people-group-title">证人</h3>
-          <div class="people-row">
+        <div class="people-group people-group-witnesses">
+          <h3 class="people-group-title">证人（按主题）</h3>
+          <p class="cast-theme-hint">同一主题下：出庭证人与证言中被点名者放一起；悬停／点击看简介。未归入主题者不强行塞。</p>
+          <div class="witness-theme" id="cast-theme-iran">
+            <h4 class="witness-theme-title">Iran · Mobinet／Skycom</h4>
+            <p class="witness-theme-blurb">伊朗侧电信／监听与控方所称 Skycom 壳公司线（开庭首周）。</p>
+            <div class="people-row">
             <div class="person witness" tabindex="0">
               <span class="person-name">Parham Beheshti</span>
               <span class="person-role">第一证人 · 伊朗业务 / 合作证人</span>
@@ -520,6 +524,12 @@
                 <p class="tip-src">来源：AP / NBC · 姓名拼写亦见 Baheshti</p>
               </div>
             </div>
+            </div>
+          </div>
+          <div class="witness-theme" id="cast-theme-futurewei">
+            <h4 class="witness-theme-title">Futurewei · 华为美国子公司</h4>
+            <p class="witness-theme-blurb">美国前哨／企业文化、「1+1」、访华安保与专利回传线。</p>
+            <div class="people-row">
             <div class="person witness" tabindex="0">
               <span class="person-name">Linda Schneider</span>
               <span class="person-role">Futurewei 云 · Day 2 证人</span>
@@ -529,6 +539,53 @@
                 <p class="tip-src">来源：Law360 2524011 / Inner City Press 笔记</p>
               </div>
             </div>
+            <div class="person witness" tabindex="0">
+              <span class="person-name">Mr. Martin</span>
+              <span class="person-role">9/15 证人 · Cisco → Futurewei</span>
+              <div class="person-tip" role="tooltip">
+                <p>ICP Bluesky 称 Mr. Martin；MLex 写 <strong>John Martin</strong>（本站按来源并列）。曾任职 Cisco，后入 Futurewei／华为贝尔维尤。直接询问：访华「White House」楼禁手机、笔记本摄像头贴电工胶带、每桌保险柜；Sonny［Sunny］「带走上家价值」。全文 MLex 补：陪审团看「白宫」外观照片；实验室见竞品拆解。离职因「not productive」「tarnished me」。</p>
+                <p>交叉：Cisco 泡沫期裁员；本人主动联系 Futurewei；辩方 McD／BK 邻近类比；称信息流单向、像刻意挖人；深圳园区航拍「不是我看到的样子」；Tech Insights／商业秘密术语被 Donnelly 叫停；保险柜为密码、三道金探防偷工具；承认介绍 Dave Piazza、Joe Veni 后被切出讨论。</p>
+                <p class="tip-src">来源：Inner City Press Bluesky 2026-09-15 ~16:24–16:44Z</p>
+              </div>
+            </div>
+            <div class="person witness" tabindex="0">
+              <span class="person-name">Anthony Mitchell</span>
+              <span class="person-role">前华为美国子公司 · 逆向物流（MLex）</span>
+              <div class="person-tip" role="tooltip">
+                <p>据全文 MLex（2026-09-17）：领导华为美国子公司 reverse logistics；证言「1+1」管理——本地美国人多对接美国客户，中国配对人一般管日常权威。「The local US person would do more interfacing with the US customer, and the other person would deal with China。」出庭日未钉死为周四。</p>
+                <p class="tip-src">来源：MLex Rubenfeld 2026-09-17 · <a href="day-sept17.html#beat-d17-14">9/17 节拍 14</a></p>
+              </div>
+            </div>
+            <div class="person witness" tabindex="0">
+              <span class="person-name">Jesse Hong</span>
+              <span class="person-role">前 Futurewei／圣克拉拉软件（MLex／ICP）</span>
+              <div class="person-tip" role="tooltip">
+                <p>据全文 MLex：圣克拉拉软件开发者；全队赴华汇报；同事（自 AT&amp;T）讲前东家项目；中国同事嘱「between us」；同事用个人公司进 Facebook 2017 闭门会。ICP／MLex：Sean Chen TIP 邮件收件人之一。</p>
+                <p class="tip-src">来源：MLex／ICP ednybook2 · <a href="day-sept17.html#beat-d17-17">9/17 节拍 17</a></p>
+              </div>
+            </div>
+            <div class="person witness" tabindex="0">
+              <span class="person-name">Sonny［Sunny］</span>
+              <span class="person-role">证言中点名 · 非确认出庭</span>
+              <div class="person-tip" role="tooltip">
+                <p>Martin 所称圣克拉拉上司；ICP 写作 Sonny [Sunny]，拼写未决，本站并列。据证言：解释保险柜时称「Your value to your next employers is what you take from your previous employer」。不等于当日出庭证人。</p>
+                <p class="tip-src">来源：ICP Bluesky 2026-09-15</p>
+              </div>
+            </div>
+            <div class="person witness" tabindex="0">
+              <span class="person-name">Dave Piazza · Joe Veni</span>
+              <span class="person-role">证言中被点名 · 非出庭证人</span>
+              <div class="person-tip" role="tooltip">
+                <p>交叉中华为律师问 Martin 是否向华为介绍过 Dave Piazza 与 Joe Veni；Martin 称是，并称随后被切出讨论（ICP：「Let I got cut out of the discussions」）。公开串未述二人职务或结局。</p>
+                <p class="tip-src">来源：ICP Bluesky 2026-09-15</p>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="witness-theme" id="cast-theme-富士通">
+            <h4 class="witness-theme-title">富士通 · Supercomm／Weihua</h4>
+            <p class="witness-theme-blurb">2004 芝加哥展会刺探链与笔记本物证。</p>
+            <div class="people-row">
             <div class="person witness" tabindex="0">
               <span class="person-name">Teresa Harmon</span>
               <span class="person-role">Harmon Exhibits 共有人 · 富士通展台</span>
@@ -601,53 +658,18 @@
                 <p class="tip-src">来源：Inner City Press 2026-09-14 下午笔记 · 全名未公开</p>
               </div>
             </div>
+            </div>
+          </div>
+          <div class="witness-theme" id="cast-theme-tappy">
+            <h4 class="witness-theme-title">Tappy · T-Mobile</h4>
+            <p class="witness-theme-blurb">Bellevue 实验室机器人、邮件与 FBI 铺垫。</p>
+            <div class="people-row">
             <div class="person witness" tabindex="0">
               <span class="person-name">Katherine Barnes</span>
               <span class="person-role">9/15 证人 · T-Mobile 实验室主管</span>
               <div class="person-tip" role="tooltip">
                 <p>2016 年自 T-Mobile 退休；曾负责华盛顿州 Bellevue 测试实验室。9/15 就 2013 年 5 月三起华为员工相关事件作证：跟在别人后面进限制区／在限制区逗留、未授权拍 Tappy、把零件放进背包带走；称这是「关键时刻」（salient moment），并说华为「签过的协议每一项都违反了」；通报安保、法务与华为客户经理后取消实验室准入，并说「我们终止了」。陪审团观看 Seattle Times 实验室巡视视频。MLex 曾称交叉预计周三续；同日公开材料主线为 Diclemis／Tappy 邮件（SCMP 具名；ICP 现场串），未见点名 Barnes。</p>
                 <p class="tip-src">来源：MLex · Samuel Rubenfeld · 2026-09-15 23:02 GMT；交叉见 ICP 9/16</p>
-              </div>
-            </div>
-            <div class="person witness" tabindex="0">
-              <span class="person-name">Mr. Martin</span>
-              <span class="person-role">9/15 证人 · Cisco → Futurewei</span>
-              <div class="person-tip" role="tooltip">
-                <p>ICP Bluesky 称 Mr. Martin；MLex 写 <strong>John Martin</strong>（本站按来源并列）。曾任职 Cisco，后入 Futurewei／华为贝尔维尤。直接询问：访华「White House」楼禁手机、笔记本摄像头贴电工胶带、每桌保险柜；Sonny［Sunny］「带走上家价值」。全文 MLex 补：陪审团看「白宫」外观照片；实验室见竞品拆解。离职因「not productive」「tarnished me」。</p>
-                <p>交叉：Cisco 泡沫期裁员；本人主动联系 Futurewei；辩方 McD／BK 邻近类比；称信息流单向、像刻意挖人；深圳园区航拍「不是我看到的样子」；Tech Insights／商业秘密术语被 Donnelly 叫停；保险柜为密码、三道金探防偷工具；承认介绍 Dave Piazza、Joe Veni 后被切出讨论。</p>
-                <p class="tip-src">来源：Inner City Press Bluesky 2026-09-15 ~16:24–16:44Z</p>
-              </div>
-            </div>
-            <div class="person witness" tabindex="0">
-              <span class="person-name">Anthony Mitchell</span>
-              <span class="person-role">前华为美国子公司 · 逆向物流（MLex）</span>
-              <div class="person-tip" role="tooltip">
-                <p>据全文 MLex（2026-09-17）：领导华为美国子公司 reverse logistics；证言「1+1」管理——本地美国人多对接美国客户，中国配对人一般管日常权威。「The local US person would do more interfacing with the US customer, and the other person would deal with China。」出庭日未钉死为周四。</p>
-                <p class="tip-src">来源：MLex Rubenfeld 2026-09-17 · <a href="day-sept17.html#beat-d17-14">9/17 节拍 14</a></p>
-              </div>
-            </div>
-            <div class="person witness" tabindex="0">
-              <span class="person-name">Jesse Hong</span>
-              <span class="person-role">前 Futurewei／圣克拉拉软件（MLex／ICP）</span>
-              <div class="person-tip" role="tooltip">
-                <p>据全文 MLex：圣克拉拉软件开发者；全队赴华汇报；同事（自 AT&amp;T）讲前东家项目；中国同事嘱「between us」；同事用个人公司进 Facebook 2017 闭门会。ICP／MLex：Sean Chen TIP 邮件收件人之一。</p>
-                <p class="tip-src">来源：MLex／ICP ednybook2 · <a href="day-sept17.html#beat-d17-17">9/17 节拍 17</a></p>
-              </div>
-            </div>
-            <div class="person witness" tabindex="0">
-              <span class="person-name">Sonny［Sunny］</span>
-              <span class="person-role">证言中点名 · 非确认出庭</span>
-              <div class="person-tip" role="tooltip">
-                <p>Martin 所称圣克拉拉上司；ICP 写作 Sonny [Sunny]，拼写未决，本站并列。据证言：解释保险柜时称「Your value to your next employers is what you take from your previous employer」。不等于当日出庭证人。</p>
-                <p class="tip-src">来源：ICP Bluesky 2026-09-15</p>
-              </div>
-            </div>
-            <div class="person witness" tabindex="0">
-              <span class="person-name">Dave Piazza · Joe Veni</span>
-              <span class="person-role">证言中被点名 · 非出庭证人</span>
-              <div class="person-tip" role="tooltip">
-                <p>交叉中华为律师问 Martin 是否向华为介绍过 Dave Piazza 与 Joe Veni；Martin 称是，并称随后被切出讨论（ICP：「Let I got cut out of the discussions」）。公开串未述二人职务或结局。</p>
-                <p class="tip-src">来源：ICP Bluesky 2026-09-15</p>
               </div>
             </div>
             <div class="person witness" tabindex="0">
@@ -690,6 +712,12 @@
                 <p class="tip-src">来源：ICP 2026-09-16；SCMP Magnier 2026-09-17</p>
               </div>
             </div>
+            </div>
+          </div>
+          <div class="witness-theme" id="cast-theme-cnex">
+            <h4 class="witness-theme-title">CNEX · 存储／海思</h4>
+            <p class="witness-theme-blurb">SSD／NVMe 控制器与圣克拉拉对接。</p>
+            <div class="people-row">
             <div class="person witness" tabindex="0">
               <span class="person-name">王勇 · Wang Yong</span>
               <span class="person-role">9/18 证人 · 前 CNEX 销售总监</span>
@@ -706,6 +734,12 @@
                 <p class="tip-src">来源：ICP／用户 digest · <a href="day-sept18.html#beat-d18-08">9/18 节拍 08</a></p>
               </div>
             </div>
+            </div>
+          </div>
+          <div class="witness-theme" id="cast-theme-庭审辅助">
+            <h4 class="witness-theme-title">庭审辅助</h4>
+            <p class="witness-theme-blurb">口译等非证人席角色。</p>
+            <div class="people-row">
             <div class="person witness" tabindex="0">
               <span class="person-name">Ching Ng</span>
               <span class="person-role">9/18 · 普通话口译（宣誓）</span>
@@ -714,164 +748,10 @@
                 <p class="tip-src">来源：ICP／用户 digest · <a href="day-sept18.html#beat-d18-01">9/18 节拍 01</a></p>
               </div>
             </div>
+            </div>
           </div>
+        </div>
         </div>
 
       </div>
     </section>
-
-    <!-- 4 TRANSCRIPT -->
-    <!-- DAY ENTRY CARDS (full transcripts on separate pages) -->
-<!-- 5 COMPARE -->
-    <section id="sec-compare">
-      <span class="label-sc">Narrative Contrast</span>
-      <h2 class="section-h">控辩叙事对照表</h2>
-      <div class="compare-wrap">
-        <table class="compare-table">
-          <thead>
-            <tr>
-              <th>议题</th>
-              <th>控方框架</th>
-              <th>辩方框架</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>公司本质</td>
-              <td>二十年犯罪企业；政策驱动的模式化违法；腐败直达创始人与 CFO</td>
-              <td>靠勤奋与研发崛起的全球科技公司；没有犯罪蓝图；RICO 标签不是捷径</td>
-            </tr>
-            <tr>
-              <td>商业秘密</td>
-              <td>系统性窃取（Cisco 皇冠珠宝、Tappy 视频、多公司）；奖金激励；Futurewei 专利使用文化与数据回传；富士通展会刺探</td>
-              <td>孤立员工行为 + 事后纠正；巨额自主研发与许可费；部分主张（如 Quintel/CNEX）不实；展会本属公开营销</td>
-            </tr>
-            <tr>
-              <td>伊朗 / Skycom</td>
-              <td>隐瞒业务性质；经纽约银行洗钱式使用美元；协助监控本国公民</td>
-              <td>民用协助；部分监听当地合法；争点是是否误导银行，而非道德赞成与否</td>
-            </tr>
-            <tr>
-              <td>银行与美元</td>
-              <td>对银行撒谎以获贷款/维持关系；滥用美国金融体系（报道称汇丰清算逾1亿美元量级）</td>
-              <td>银行争相合作甚至被华为拒绝；无撒谎动机；美元路由是银行选择；银行曾知情</td>
-            </tr>
-            <tr>
-              <td>孟晚舟 SOF</td>
-              <td>宣誓承认对银行说谎、承认华为控制 Skycom——对公司案极具杀伤力</td>
-              <td>协商事实陈述≠供认欺诈故意；不能被当成对全案共谋的“盖章”</td>
-            </tr>
-            <tr>
-              <td>证人</td>
-              <td>内部视角、当场抓获、合作者揭开黑箱；Futurewei 前雇员文化证言</td>
-              <td>cherry-picking；不可靠；旧怨；Beheshti 自身违法/表格问题；目击记忆受检方照片刷新</td>
-            </tr>
-            <tr>
-              <td>Futurewei / 企业文化</td>
-              <td>美国前哨；Schneider：专利使用与数据回传；9/15 Martin：访华安保／保险柜、Sonny［Sunny］「带走上家价值」、单向信息流／挖人（ICP）；另线 9/15 Barnes／Tappy（MLex）</td>
-              <td>普通科层；主动求职／泡沫裁员；邻近选址如 McD／BK；市售拆解（Tech Insights）；介绍人后被切出（ICP）</td>
-            </tr>
-            <tr>
-              <td>证据规则 404</td>
-              <td>反对 prior good acts（出口管制获批、实习、Tech Women 等）污染争点</td>
-              <td>主张完整图景与偏见探究；法官：不能问“哪些时候没抢银行”</td>
-            </tr>
-            <tr>
-              <td>富士通展会（2004 Supercomm）</td>
-              <td>Harmon→Susong→Wright（Law360）；9/14 FBI：Zhu Yubin 笔记本／Metro＝城域光×27／「差距太大」笔记；富士通前 SVP：禁拍、「不会允许华为」（ICP）</td>
-              <td>foolish 个人行为；无禁入规定；相邻参展；NDA 仅密信息、外观非密；营销材料≠电路图；DX 2182 过关（ICP）</td>
-            </tr>
-            <tr>
-              <td>RICO</td>
-              <td>模式 + 企业 + 高层牵线 = 共谋经营犯罪企业</td>
-              <td>拼凑的 patchwork，缺乏公司范围共谋；不能把商业竞争刑事化</td>
-            </tr>
-            <tr>
-              <td>诉求</td>
-              <td>Guilty as charged</td>
-              <td>Not guilty；投资、创新、竞争</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-<!-- 7 JUDGMENT -->
-    <section id="sec-judgment">
-      <span class="label-sc">Commentary — Not Legal Advice</span>
-      <h2 class="section-h">总体评判（评论意见）</h2>
-      <div class="note-box commentary">
-        <span class="label-sc">重要标识</span>
-        <p style="margin:0">以下为基于公开报道与庭审笔记的<strong>评论意见</strong>，不是法律意见，不是对判决的预测，不构成律师—客户关系。案件仍处极早阶段：完成开场与多日证言（Beheshti、Schneider、Harmon→Susong→Wright；9/14 FBI 物证与富士通前 SVP；9/15 <strong>Katherine Barnes</strong>／Tappy（MLex）＋ Mr. Martin Cisco→Futurewei（ICP）等），绝大多数文件与专家证据尚未展开。</p>
-      </div>
-
-      <h3 class="sub-h">1. RICO 要的是“模式”，不是“轶事合集”</h3>
-      <p>控方最强的结构野心，是把 Cisco、Tappy、富士通、伊朗美元清算、代号、CFO 会晤、监听提案等装进同一只“二十年企业政策”的袋子。若袋子缝得住，RICO 与多项共谋罪名会互相供氧；若缝不住，陪审团可能开始做“拆件采购”——承认某些恶劣事实，却拒绝公司范围共谋。辩方“patchwork / cherry-picking / isolated”的用语，正是奔着拆线去的。</p>
-
-      <h3 class="sub-h">2. 奖金、政策、高层与孟晚舟 SOF：控方的黏合剂</h3>
-      <p>开场反复出现的“bonus”“company policy”“pulled the strings”“to the very top”，是在为归责路径刷底漆。孟晚舟 SOF 则是黏合剂中最刺眼的一滴：对银行说谎与控制 Skycom 的承认，一旦被广泛采信，会大幅缩短“伊朗—银行欺诈”故事的证明距离。然而辩方指出的<strong>意图缺口</strong>（intent gap）并非诡辩——欺诈与诸多白皮犯罪的心理要件，往往决定“错误陈述”是否升格为刑事犯罪。SOF 有多“毒”，很大程度上取决于法官如何指示其用途、以及辩方能否把“协商承认”与“全案共谋”切开。</p>
-
-      <h3 class="sub-h">3. 辩方的三条生命线：流氓员工、补救、无制裁故意</h3>
-      <p>对 IP：孤立员工 + 纠正 + 研发/许可费，试图把刑事案拉回“已处理的合规事故”。对制裁：银行选择美元路由、银行曾知情、华为甚至拒绝银行——攻击“必须撒谎”的动机故事，并要求证明规避制裁的故意。对伊朗监控道德冲击：把争点收窄到“是否误导银行”。这三条线是否够用，要看举证阶段能否用文件系统性地稀释 Beheshti 式愤怒证言与 Tappy 式视频冲击。</p>
-
-      <h3 class="sub-h">4. 第一证人：情绪入口与持续弹劾</h3>
-      <p>Beheshti 完成了开场承诺的“内部视角”：数据中心、中方控制、合法监听提案、用户不知情、双重用途、对“残暴政权”的震惊。交叉询问则迅速展示：长期合作、儿子转移、正义/伤害政权的动机之争。第二日进一步典型化 FRE 弹劾：在伊工作合法性、安全许可表格、目的与手段；“政府从未起诉你”被 sustained，显示法庭允许打可信度，却挡住对检方裁量的正面攻击。mistrial 首日被拒后，偏见战改为细刀解剖。</p>
-
-      <h3 class="sub-h">4a. Futurewei 与“前哨”假说（评论意见）</h3>
-      <p>Schneider 证言是开场“US subsidiaries as outposts”的第一块内部拼图：中国工程师对使用专利信息“自豪”、上报无果、数据备份至中国、证人辞职。若后续文件补强，它会强烈支持 RICO 所要的文化/模式；若被证明是对公开专利阅读与全球研发备份的误解，则可能回落为辩方所说的被扭曲的 ordinary activities。辩方“老板做决定很寻常”的降维，与法官挡住 Tech Women/获批出口表格等 prior good acts，形成有趣张力：法庭既限制用善行粉饰，也要求控方最终仍用具体证据证明窃取，而非仅用“中国总部管事”的组织常识替代。</p>
-
-      <h3 class="sub-h">4b. 404 银行抢劫类比的信号</h3>
-      <p>Donnelly 把规则说成常识：不能靠“哪些时候没抢银行”证明这次无辜。这对公司被告意味着——合规培训次数、无关技术的出口批准、社会荣誉——很难直接换成无罪车票。辩方仍可在其他开口（如具体争点技术的许可、独立研发记录）上战斗，但 Day 2 的边审显示法官对光晕证据不客气。</p>
-
-      <h3 class="sub-h">4c. 富士通展会：开场轶事的庭审化</h3>
-      <p>Law360 把链条说清楚：<strong>Harmon Exhibits 业主</strong>（Teresa/Timothy，非“富士通情报官”）在 2004 Supercomm 闭馆后拦截持相机男子并呼叫不当班警员 → <strong>W. Michael Susong</strong>（富士通安保）起获索尼相机、存储卡、笔记本、中国护照与徽章「Yi Bin Zhu / Weihua Technology」（华为 ananym）→ <strong>Melanie Wright</strong>（时任 GC）称「horrified」，发现照片亦含 Cisco、Nortel，通报 FBI、致函对手与华为；华为回应称初级工程师未经授权。同期西媒档案：<strong>BusinessWeek</strong>（2004-08-09）取得 Scofield 7/21 致任正非信，写明约百万美元级设备拆壳拍照、抄送 AT&amp;T／Cisco／Lucent／Nortel／Tellabs、移交 FBI 并点名可能违反 EEA；华为当时称「unfortunate misunderstanding」、BW 发稿时 Zhu「降薪仍在职」。9月14日 ICP 笔记把故事推进到 <strong>FBI</strong> 当庭指认 Zhu Yubin 笔记本内容（Metro 高频、「Huawei grey difference is too great」）、华为与 Weihua 双名片、签证联系人 Huo Da Wei，以及未具名<strong>富士通前数据解决方案高级副总裁</strong>对真机展出、禁拍与「不会允许华为」的政策证言；辩方则用无禁入、相邻参展、NDA 外观非密与 DX 2182 做最小化，再直接以「营销材料无电路图」回击。陪审团可能读成“模式化刺探+ananym 掩饰+内部比较笔记”，或读成“展会公开信息+安保过度反应”。现场帖 ≠ 逐字稿。另：Law360 称审判或逾四个月，并提及 FISA/保护令证据与闭庭动议待裁定——属程序旁注。</p>
-      <h3 class="sub-h">4d. 9月14日：物证朗读与政策对决（评论意见）</h3>
-      <p>周一的增量不在新的道德高潮，而在<strong>文件与规范</strong>：FBI 把扣押物念给陪审团听；富士通前高管把竞品政策说成日常。辩方的刀法仍然是把“禁止”降成“礼貌习惯”、把“秘密”降成“外观”。Gatto 当庭与检方聚头、十分钟展品休庭，提醒读者：证据入卷前仍有大量看不见的认证搏斗。在 ICP「Story later」暂停之后，任何未报道的续询都不应被本站脑补。</p>
-
-      <h3 class="sub-h">4e. 9月15日：Katherine Barnes／Tappy＋Martin 安保文化（评论意见）</h3>
-      <p>周二公开报道其实是<strong>两条线</strong>。西媒 <strong>MLex</strong>（Samuel Rubenfeld）确认：具名证人 <strong>Katherine Barnes</strong>（2016 自 T-Mobile 退休；曾管 Bellevue 实验室）就 <strong>2013 年 5 月三件事</strong>作证——跟进限制区、未授权拍 Tappy、月末把零件放进背包；她当庭说这是「<strong>关键时刻</strong>」（salient moment），华为「签过的协议每一项都违反了」，并在陪审团看完 Seattle Times 巡视视频后，描述取消准入与「我们终止了」——把 9/9 开场里那根很具体的实验室故事，推进到<strong>真人上证人席</strong>；交叉预计周三续。午后 <strong>ICP Bluesky</strong> 则几乎只记 <strong>Mr. Martin</strong>（Cisco→Futurewei）：访华禁手机、胶带封摄像头、桌面保险柜，以及上司 Sonny［Sunny］「带走上家价值」；辩方用泡沫裁员、主动求职、快餐邻近、航拍与 Tech Insights 去戏剧化。世界日报华文稿把当天写成「Tappy 日」；<strong>背包现亦可与 MLex／Barnes 对上</strong>，但监控录像／总部下令仍属世界日报／起诉书／开场、<strong>本篇 MLex 未写</strong>。<strong>两线不矛盾</strong>：ICP「back in」暗示记者可能错过上午；实验室违约故事与 Futurewei 文化说法，是检方知识产权叙事的不同齿轮。缺口：未见 ICP 公开 Barnes 帖。现场笔记 ≠ 逐字稿。</p>
-
-      <h3 class="sub-h">5. 地缘政治悬顶真实存在，却不是合法判决理由</h3>
-      <p>问卷问中国/伊朗政府观感、审判撞上习—特会晤，这些都使“政治审判”的外部评论易于响起。联邦法官的制度回答是：指示陪审团只看证据与法律。现实回答是：指示能降低、不能消灭先验态度。因此本案的“公正外观”与“证据质量”同样重要——双方律师其实都在为这两条战线作战。</p>
-
-      <h3 class="sub-h">6. 现在下结论尚早</h3>
-      <h3 class="sub-h">4f. 9月16日：Diclemis／Tappy 邮件＋SCMP（评论意见）</h3>
-      <p>周三把 Tappy 线推进到<strong>调查人员＋邮件时间线</strong>：SCMP 具名 <strong>James Diclemis</strong>／<strong>Matthew Skurnik</strong>「数小时邮件」；ICP 贡献问答节奏（人物板、背包视频、OEM、下午 Yang Kai／Yao／Adam、Canoe、5/14 实验室、晚间 Trey）。SCMP 事实已<strong>织入</strong>各拍「信息解读／背景／为何这么说」（Kathale／Mantz／白板／民事 $4.8M），不再页底三拍叠写。与周二 Barnes 同主题不同齿轮。SCMP 写「14 项不认罪」时，本站继续标注陪审团面前<strong>十二项</strong>（IEEPA 两项已撤）。笔记 ≠ 逐字稿；未见展品原片。</p>
-
-      <h3 class="sub-h">4g. 9月17日：Tappy／Young（已休庭 · 评论意见）</h3>
-      <p>周四午后 ICP 串把齿轮再拧一圈：从 Diclemis 的「怎么写信／怎么带走」切到运营商侧<strong>未具名</strong>「Tappy」经理接受 <strong>Heberlig</strong> 交叉。公开短帖里的刀法很清楚——漏触是不是大家都有、橡胶头是不是发过、跟 Synaptics 的 Weavers 邮件、金属触点是铜还是铝——都在把「特殊盗窃」往「测试常态／供应链对话」拉。勿把未具名经理自动写成 Barnes。笔记 ≠ 逐字稿。</p>
-
-      <h3 class="sub-h">4h. 9月18日：短公开日——王勇·CNEX＋三名证人闭庭令（评论意见）</h3>
-      <p>周五公开增量从「证人问答」切到「谁能进门听」：Donnelly 短令批准为<strong>三名证人</strong>关闭法庭，同时承诺删节笔录、并预告详细意见书。这把公开审判的紧张感写进了程序本身，但<strong>范围仍是有限的</strong>——不是整案永久黑箱。ICP 标题把 Iran／UNGA 写得很满；在意见书出来之前，那些只能当记者框架，不能当法官理由。读者应同时记住：密封 ECF 号已点名；闭庭三名证人是谁仍未知；公开日则留下王勇／CNEX；下一公开节点据庭上宣布为 9/22 9:30 · 6D South。</p>
-
-      <p>到9月18日短公开日折入、可见材料为止，陪审团（及公众笔记）看到的是：Tappy 线之外又出现一条 <strong>CNEX／存储芯片</strong>公开证人弧（王勇；海思；王磊·圣克拉拉；公开串无交叉），以及同日落下的<strong>三名证人有限闭庭令</strong>；更早则是：两幅极具修辞完成度的公司肖像；一名高度情绪化、亦高度可弹劾的伊朗业务证人；两名前 Futurewei 雇员视角（Schneider 的专利／回传文化；Martin 的访华安保、Sonny［Sunny］语录与单向信息流——后者暂仅见 ICP Bluesky）；一条经 Law360 与 ICP 共同推进的富士通链（Harmon→Susong→Wright → FBI 笔记本／名片 → 前 SVP 政策证言／Weihua）；以及 <strong>MLex 确认的 Katherine Barnes 就 Tappy／Bellevue／May 2013 三起与关系终止的证言</strong>；再加上周三 <strong>Diclemis</strong>（SCMP 具名）人物板／背包视频／OEM／下午邮件弧，SCMP Kathale·Mantz·白板已织入各拍解读；以及周四午后 <strong>T-Mobile「Tappy」经理</strong>（ICP 未具名）Heberlig 交叉与短开的 <strong>Young</strong>；晚间／西媒补折则用全文 MLex 把 <strong>Mitchell「1+1」</strong>、<strong>Hong／Chen TIP</strong>、Martin「白宫」照片／拆解与「决策在中国」主题钉进同一指挥链故事（Meng DPA 承认仍<strong>未出示陪审团</strong>）。汇丰会晤的银行家、Tappy 视频完整语境、内部邮件时间戳、SOF 的法律包装——大多还在后面。平衡的读法应是：<strong>控方已经成功让“犯罪企业”成为必须被认真对待的假说，并用展会物证、比较笔记、Futurewei 前后雇员证言与（现已上证人席的）Tappy 实验室线，把“反复发生的做法”从修辞推向文件、文化与很具体的违约故事；辩方已经成功让“假说不等于证明”成为必须被同样认真对待的提醒，且在开放展台、主动求职与市售拆解正常化上保持节奏。</strong>其余，交给证据。本段为评论意见，非法律意见。</p>
-    </section>
-
-    <!-- 8 SOURCES (quiet links) -->
-    <section id="sec-sources">
-      <span class="label-sc">Sources</span>
-      <h2 class="section-h">来源链接</h2>
-      <p class="sources-quiet">公开报道与资料（点击查阅原文）：
-        <a href="https://www.reuters.com" target="_blank" rel="noopener">Reuters</a> ·
-        <a href="https://www.law360.com" target="_blank" rel="noopener">Law360</a> ·
-        <a href="https://www.theguardian.com" target="_blank" rel="noopener">Guardian</a> ·
-        <a href="https://apnews.com" target="_blank" rel="noopener">AP</a> ·
-        <a href="https://www.nbcnews.com" target="_blank" rel="noopener">NBC</a> ·
-        <a href="https://www.innercitypress.com" target="_blank" rel="noopener">Inner City Press</a> ·
-        <a href="https://www.mlex.com" target="_blank" rel="noopener">MLex</a> ·
-        <a href="https://www.scmp.com" target="_blank" rel="noopener">SCMP</a> ·
-        <a href="https://www.worldjournal.com" target="_blank" rel="noopener">世界日报</a> ·
-        <a href="https://www.fjc.gov" target="_blank" rel="noopener">FJC</a> ·
-        <a href="https://www.nyed.uscourts.gov" target="_blank" rel="noopener">EDNY</a>
-      </p>
-    </section>
-
-  </main>
-</div>
-
-<footer class="site-foot">
-  U.S. v. Huawei · 1:18-cr-00457 · EDNY Brooklyn · 9月9–18日（含 9/18 王勇·CNEX＋闭庭令）</footer>
-
-<script src="app.js?v=compact1"></script>
-</body>
-</html>
