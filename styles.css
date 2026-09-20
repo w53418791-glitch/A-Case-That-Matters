@@ -2298,3 +2298,39 @@ li { margin-bottom: 0.28rem; }
   color: var(--ink-soft);
   font-style: italic;
 }
+
+
+/* Witness themes on homepage cast */
+.people-group-witnesses { margin-top: 0.5rem; }
+.cast-theme-hint {
+  font-size: 0.86rem;
+  color: var(--ink-muted, #5c4a32);
+  margin: 0.25rem 0 0.85rem;
+  line-height: 1.45;
+  max-width: 48rem;
+}
+.witness-theme {
+  margin: 0 0 1.15rem;
+  padding: 0.75rem 0.85rem 0.9rem;
+  background: linear-gradient(135deg, var(--cream, #f7f1e6) 70%, #f0e8d8 100%);
+  border: 1px solid var(--rule, #d4c4a8);
+  border-left: 3px solid var(--navy, #1a2f4a);
+}
+.witness-theme:nth-child(odd) { border-left-color: var(--burgundy, #7a2e3a); }
+.witness-theme:nth-child(3n) { border-left-color: #a6843a; }
+.witness-theme:nth-child(4n) { border-left-color: #2f4a3c; }
+.witness-theme:nth-child(5n) { border-left-color: #5c6b7a; }
+.witness-theme-title {
+  margin: 0 0 0.2rem;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--navy, #1a2f4a);
+  letter-spacing: 0.01em;
+}
+.witness-theme-blurb {
+  margin: 0 0 0.55rem;
+  font-size: 0.82rem;
+  color: var(--ink-muted, #5c4a32);
+  line-height: 1.4;
+}
+.witness-theme .people-row { margin: 0; }
