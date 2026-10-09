@@ -2334,3 +2334,8 @@ li { margin-bottom: 0.28rem; }
   line-height: 1.4;
 }
 .witness-theme .people-row { margin: 0; }
+
+/* 2026-10-09 dashboard layout fix: equal-height cards, CTA pinned to bottom */
+.dashboard { align-items: stretch; }
+a.dash-card-link { display: flex; flex-direction: column; }
+a.dash-card-link .dash-cta { margin-top: auto; padding-top: 0.5rem; align-self: flex-start; }
