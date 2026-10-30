@@ -2339,3 +2339,17 @@ li { margin-bottom: 0.28rem; }
 .dashboard { align-items: stretch; }
 a.dash-card-link { display: flex; flex-direction: column; }
 a.dash-card-link .dash-cta { margin-top: auto; padding-top: 0.5rem; align-self: flex-start; }
+
+/* slim-down folds 2026-10-30 */
+details.tl-fold>summary,details.story-fold>summary,details.compact-fold>summary{cursor:pointer;list-style:none;color:inherit}
+details.tl-fold>summary::-webkit-details-marker,details.story-fold>summary::-webkit-details-marker,details.compact-fold>summary::-webkit-details-marker{display:none}
+details.tl-fold>summary::after,details.story-fold>summary::after{content:" ▸";color:#6a1f2b;font-size:.8em}
+details.tl-fold[open]>summary::after,details.story-fold[open]>summary::after{content:" ▾"}
+details.tl-more,.tl-more{margin-top:.3rem;font-size:.92em}
+details.story-fold>summary{font-size:.92em;margin:.2rem 0;line-height:1.5}
+details.compact-fold{margin:.3rem 0;font-size:.9em}
+details.compact-fold>summary{color:#1f3a5c;text-decoration:underline dotted;font-size:.88em}
+details.cast-fold{margin:.35rem 0}
+details.cast-fold>summary.people-group-title{cursor:pointer}
+details.cast-fold>summary.people-group-title::after{content:" ▸";font-size:.8em;color:#6a1f2b}
+details.cast-fold[open]>summary.people-group-title::after{content:" ▾"}
